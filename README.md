@@ -1,7 +1,11 @@
 # Teachable Report
 
-This project generates reports with published courses and active students by consuming the Teachable API.
-It includes automated tests using RSpec and WebMock.
+This project generates a report of published courses and their actively enrolled students by consuming the Teachable Public API.
+
+It includes:
+- A CLI interface via a Rake task
+- A minimal web interface built with Rails
+- Automated tests using RSpec, VCR and WebMock
 
 ## How to Run
 
@@ -118,9 +122,13 @@ bundle exec rspec --format documentation
 ### 4. **Folder Structure**
 ```
 app/
+  controllers/       # interface entry point
   services/
     reports/         # report generation logic
     teachable/       # API client
+  views/             # Simple frontend to display the report
+lib/
+  tasks/             # CLI rake task
 spec/
   reports/           # report tests
   vcr_cassettes/     # HTTP recordings
@@ -139,14 +147,14 @@ spec/
 
 This project was developed with assistance from **GitHub Copilot** (Claude Haiku 4.5):
 
-- **Initial scaffolding:** Folder structure and file setup
-- **Spec generation:** RSpec test templates
-- **VCR/WebMock configuration:** Isolated test setup
-- **Debugging:** Error diagnosis (NameError, WebMock)
-- **Documentation:** This README
+- Initial scaffolding and folder structure
+- RSpec test templates
+- VCR and WebMock configuration
+- Debugging common runtime and test issues
+- Documentation drafting and refinement
 
 **Benefit:** Accelerated initial setup and quick resolution of common errors.
 
 ---
 
-Built with ❤️ and AI
+Built with ❤️, Ruby and a touch of AI
