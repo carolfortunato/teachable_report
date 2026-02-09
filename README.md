@@ -39,7 +39,7 @@ No database setup is required, as the application does not persist data and acts
 This project includes a rake task to generate the Published Courses Report from the command line.
 
 ```bash
-bundle exec rake reports:published_courses
+bundle exec rake teachable:published_courses_report
 ```
 
 Make sure your `TEACHABLE_API_KEY` is set before running the task.
@@ -47,7 +47,7 @@ If using `.env`, nothing extra is required.
 If not using `.env`, you can run:
 
 ```bash
-TEACHABLE_API_KEY=your_api_key_here bundle exec rake reports:published_courses
+TEACHABLE_API_KEY=your_api_key_here bundle exec rake teachable:published_courses_report
 ```
 
 What the Task Does
