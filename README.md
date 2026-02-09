@@ -47,11 +47,11 @@ TEACHABLE_API_KEY=your_api_key_here bundle exec rake reports:published_courses
 What the Task Does
 
 When executed, the rake task:
-Instantiates `Reports::PublishedCoursesReport`
-Calls the Teachable API
-Fetches published courses
-Retrieves active students for each course
-Outputs the formatted report to the console
+- Instantiates `Reports::PublishedCoursesReport`
+- Calls the Teachable API
+- Fetches published courses
+- Retrieves active students for each course
+- Outputs the formatted report to the console
 
 ## How to Run Tests
 
