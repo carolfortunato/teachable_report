@@ -1,0 +1,5351 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/courses
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"69e9bdb66b8597f67e75a09f67da84ca"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '359'
+      Ratelimit-Reset:
+      - '30'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=AqZaLDTiUBPpbN9YGqUFycGRG7q6qTy4g4x3GSl75q4-1770674491-1.0.1.1-kYrOHTi9QOHQrqdAxHejo8OPOxH_PCo_zqsyqN09kdxLUaixWDRkIFs8Oek2Dk6JUYZVho0fBBw7BwPnWLOP3sQJVze2hfR2HKUDpM_vjZA;
+        path=/; expires=Mon, 09-Feb-26 22:31:31 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=z6SexrApwQxwmCKrz5mqo9NQ4Okozif6hee.aB8mOKk-1770674491033-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=87bf0cc6-4c7b-4ee5-9e59-a2b856f5384a; path=/; expires=Tue, 10 Feb
+        2026 02:01:30 GMT; SameSite=Lax; secure
+      - ahoy_visitor=ee2c662e-29c3-45fc-9ecc-e08505400c26; path=/; expires=Wed, 09
+        Feb 2028 22:01:30 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 5ad3b508f4d32f349f0a911dcde9695a
+      X-Kong-Upstream-Latency:
+      - '145'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '359'
+      X-Request-Id:
+      - 64b6f7ed61c561c5af3b4427e4fe732b
+      X-Runtime:
+      - '0.137205'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/csp-reporting.cloudflare.com\/cdn-cgi\/script_monitor\/report?m=4sWU2_DaSULcm7Lt3nj_R8b5OBnDC.7qEo5ECI70DiI-1770674491-1.0.1.1-R1kqKihk1ZVJw95dfh26IWI3GWJWSYSaYcf0t2XsTJqV5wJgKqzMQy3Ae6vKOK1qQKhS8ysLs2WFf7NVYsMKN.8iTiTodKeRHrPGczrH8xy1UF82lUPVKla3aW3FxHgxEH0JxL.foU4X909TejCdmLtzPxdUifJy4lv3upckYSqlBBtSSRa79r9qCRoTBUH1"}],"group":"cf-csp-endpoint","max_age":86400}'
+      Content-Security-Policy-Report-Only:
+      - script-src 'none'; connect-src 'none'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=4sWU2_DaSULcm7Lt3nj_R8b5OBnDC.7qEo5ECI70DiI-1770674491-1.0.1.1-R1kqKihk1ZVJw95dfh26IWI3GWJWSYSaYcf0t2XsTJqV5wJgKqzMQy3Ae6vKOK1qQKhS8ysLs2WFf7NVYsMKN.8iTiTodKeRHrPGczrH8xy1UF82lUPVKla3aW3FxHgxEH0JxL.foU4X909TejCdmLtzPxdUifJy4lv3upckYSqlBBtSSRa79r9qCRoTBUH1;
+        report-to cf-csp-endpoint
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a54ef830f19b-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"courses":[{"id":2002430,"description":null,"name":"Trees and Arboreous
+        Concerns","heading":"Grow Your Knowledge of Trees and Arboreous Concerns -
+        Learn From the Expert!","is_published":true,"image_url":"https://uploads.teachablecdn.com/attachments/S1vHFU7wSgCOWlBN5PxF_tree.jpg"},{"id":2002431,"description":null,"name":"Mushroom
+        Madness","heading":"Unlock the Secrets of Mushroom Foraging with Mushroom
+        Madness","is_published":true,"image_url":"https://uploads.teachablecdn.com/attachments/ZedF0hSMRLp13m4JuqMA_mushroom.jpg"},{"id":2002434,"description":null,"name":"Flower
+        Buddies","heading":"Unlock the Joy of Gardening with Flower Buddies","is_published":false,"image_url":"https://uploads.teachablecdn.com/attachments/XxjPu0bQYapjcJcKvkM2_flower_garden.jpg"},{"id":2002435,"description":null,"name":"Growing
+        Delicious Heirloom Tomatoes","heading":"Grow your own flavorful heirlooms
+        with our easy-to-follow online course","is_published":false,"image_url":"https://uploads.teachablecdn.com/attachments/DXeBUgnvQo2cVMayGmnv_heirloom_tomato.jpg"},{"id":2002436,"description":null,"name":"Herbal
+        Teas \u0026 Other Garden Tinctures","heading":"Brew your own natural remedies
+        with Herbal Teas \u0026amp; Other Garden Tinctures","is_published":true,"image_url":"https://uploads.teachablecdn.com/attachments/ZUkyeXp0RvyOQNlWc8sA_lidiya-pavlikova-y_gKWLrw3N4-unsplash.jpg"}],"meta":{"total":5,"page":1,"from":1,"to":5,"per_page":20,"number_of_pages":1}}'
+  recorded_at: Mon, 09 Feb 2026 22:01:31 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/courses/2002430/enrollments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"83e16cc0f5a3056e368742e9c335fdcd"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '358'
+      Ratelimit-Reset:
+      - '29'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=1osRHl7d.KTfjNhIpFtGVWHkTe__4Bx7VGq8dQ4vf0o-1770674491-1.0.1.1-NWHrR0AbkaDids_ExG79l4GB.xV3ABgcK6uLidmsGvU7qBc4sdyl1dgYxA5AgqM80F3H8wXdNu881s7BM5E4wERE9l_dZ1TlcirH7UBzIXk;
+        path=/; expires=Mon, 09-Feb-26 22:31:31 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=N5ZQ7FzRM4i9gfPvZnFmuDoypi341qkkkOqrXzx_apA-1770674491431-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=3fca69ec-2386-43ff-b6be-b9024b21b1bb; path=/; expires=Tue, 10 Feb
+        2026 02:01:31 GMT; SameSite=Lax; secure
+      - ahoy_visitor=a394fa56-7350-4211-b6a5-e4cbec2a3643; path=/; expires=Wed, 09
+        Feb 2028 22:01:31 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 9c7fde6e3ce3e84849119075fe1b6020
+      X-Kong-Upstream-Latency:
+      - '87'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '358'
+      X-Request-Id:
+      - 29af04b4b0b728524f2b49eefc1eb936
+      X-Runtime:
+      - '0.080301'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a551aa18794f-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"enrollments":[{"user_id":89126347,"enrolled_at":"2025-09-08T20:58:01Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775061,"enrolled_at":"2025-09-08T20:54:45Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775126,"enrolled_at":"2024-07-25T14:21:03Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775125,"enrolled_at":"2024-07-25T14:21:01Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775124,"enrolled_at":"2024-07-25T14:20:59Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775122,"enrolled_at":"2024-07-25T14:20:58Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775121,"enrolled_at":"2024-07-25T14:20:54Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":88958558,"enrolled_at":"2024-04-03T23:21:37Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":104683905,"enrolled_at":"2024-03-29T16:41:30Z","completed_at":"2024-03-29T16:50:33Z","percent_complete":100,"expires_at":null},{"user_id":89125316,"enrolled_at":"2023-01-27T16:35:43Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125313,"enrolled_at":"2023-01-27T16:35:42Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125160,"enrolled_at":"2023-01-27T16:35:42Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125159,"enrolled_at":"2023-01-27T16:35:42Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125158,"enrolled_at":"2023-01-27T16:35:42Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125315,"enrolled_at":"2023-01-27T16:35:42Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125314,"enrolled_at":"2023-01-27T16:35:42Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125157,"enrolled_at":"2023-01-27T16:35:41Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125156,"enrolled_at":"2023-01-27T16:35:41Z","completed_at":null,"percent_complete":0,"expires_at":null}],"meta":{"total":18,"page":1,"from":1,"to":18,"per_page":0,"number_of_pages":1}}'
+  recorded_at: Mon, 09 Feb 2026 22:01:31 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89126347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b8a7e614b65a18dcea6c179996f162c6"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '357'
+      Ratelimit-Reset:
+      - '29'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=WS.ZA_vu9LKaGNoyfrWK9RTpj2tNkvEvSgbq5mptORA-1770674491-1.0.1.1-VzYXukt8gMqZarKS5fkKB5E.rCMN10SSKTPdTqG8Q2Qe0Qu2RvUUXV1l152FP7Rzf79EYi2ggku9Ol48S8tEpqEnRw4qacsewQ5uKNVW9B8;
+        path=/; expires=Mon, 09-Feb-26 22:31:31 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=GhEe2XrdFN3SBLoK6snWaiemmM.toosjWW5bdmt_OaY-1770674491781-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=7b85ed02-70ad-4503-8beb-ca37ba5d0911; path=/; expires=Tue, 10 Feb
+        2026 02:01:31 GMT; SameSite=Lax; secure
+      - ahoy_visitor=ca934b7a-3294-4c63-9af7-caa31da9783d; path=/; expires=Wed, 09
+        Feb 2028 22:01:31 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 6dc5885d6f61ca628f36510776199868
+      X-Kong-Upstream-Latency:
+      - '92'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '357'
+      X-Request-Id:
+      - 66ad1a96c524813502f5d83e57819d90
+      X-Runtime:
+      - '0.085477'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a554299080fe-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"meredith.marks@teachable.com","name":"Meredith Marks","src":null,"role":"owner","last_sign_in_ip":"69.201.188.179","id":89126347,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2025-09-08T20:59:51Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2025-09-08T21:00:13Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2025-09-08T20:58:01Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:32 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775061
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"248cbe885cabc58cb34f799c587fae95"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '356'
+      Ratelimit-Reset:
+      - '28'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=W.wPwRroDbcwCwdrgPXnT1hnVcMRkOZCpW9g8OXq_Dg-1770674492-1.0.1.1-FXZGaElNaMztNvqyOjhoOGb2QG_ONFrmuR1XxGa_7gyrefX6pE3N6wu4MTHhDN2mIMiM0QqKWFvJB_kkGOHCB5xl8hE6VLuJdJ8nijLw_LM;
+        path=/; expires=Mon, 09-Feb-26 22:31:32 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=OC3NsjupL1PkkjTmwYTa4OmIJ5lHL3xguEHh6Ta4mho-1770674492231-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=5f1865ae-1d39-4890-b767-5e84e5611479; path=/; expires=Tue, 10 Feb
+        2026 02:01:32 GMT; SameSite=Lax; secure
+      - ahoy_visitor=decdccdb-68ad-496f-876b-2d8314fc0ef6; path=/; expires=Wed, 09
+        Feb 2028 22:01:32 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 5f375531b6d0704c41975e2a12c3bc56
+      X-Kong-Upstream-Latency:
+      - '73'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '356'
+      X-Request-Id:
+      - 17bddbc14b52bbcd171a793005ded0fd
+      X-Runtime:
+      - '0.067942'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a55638cf70c6-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"sanghan.delsy@test.com","name":"Sanghan Delsy","src":null,"role":"student","last_sign_in_ip":null,"id":108775061,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:18:43Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2025-09-08T20:54:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:32 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775126
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c22f9a994a4aa5c9f0a796e1581c9988"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '355'
+      Ratelimit-Reset:
+      - '28'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=KDfP6yr.REdHv9aiAcIOwSFlW0xb5wI4M1_5YDl5jZU-1770674492-1.0.1.1-UVaQ.h4Wal.6jgxyDgIJn61F_pK6ajasSTgKyQV60DeL1TSVJ6Ajy_VeH63OSDcYZyf7rjg9oOzAMKtpn8Ao91GL91Nl2EIfTmgXr24Fs6M;
+        path=/; expires=Mon, 09-Feb-26 22:31:32 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=hfRiFxpTW78DqTU5lEWC7kVmgfkjR2Xrae74g2L_RJE-1770674492593-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=db38d723-7fda-4294-b386-309334182ce2; path=/; expires=Tue, 10 Feb
+        2026 02:01:32 GMT; SameSite=Lax; secure
+      - ahoy_visitor=a5606468-010f-4295-925e-1b7b083fae11; path=/; expires=Wed, 09
+        Feb 2028 22:01:32 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 2c0b673b26a5b00b053fb8057c14c317
+      X-Kong-Upstream-Latency:
+      - '69'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '355'
+      X-Request-Id:
+      - 1053ba5e3d9678e933c668b7d8626c23
+      X-Runtime:
+      - '0.065033'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5596da2f450-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"retaj.jana@test.com","name":"Retaj Jana","src":null,"role":"student","last_sign_in_ip":null,"id":108775126,"courses":[{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-07-25T14:18:59Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-07-25T14:21:03Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2024-07-25T14:22:51Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:33 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775125
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"fc259a6d0a25f02a10a1d93cfd26be99"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '354'
+      Ratelimit-Reset:
+      - '28'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=xV8pVU8uJsjmULxShkQgUFtCFWlnsMxQJcBjKql6Gm0-1770674492-1.0.1.1-TgJkoKYYDy_GamkyVWn8sjfn3r0dRwE0vbw49VgVOCXce6GSppV6596oxQ.QSQASN2IJIhjJEKnGYLo77pliESySTphsSJr53eQLcYPCV8A;
+        path=/; expires=Mon, 09-Feb-26 22:31:32 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=thjXvRPgzpcKmYnLlCuf1_eEpL1_wP1JpVIp.ldE0H8-1770674492916-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=2805efcf-4ad0-4183-a7e2-62274bbffa64; path=/; expires=Tue, 10 Feb
+        2026 02:01:32 GMT; SameSite=Lax; secure
+      - ahoy_visitor=9f469e95-3020-421f-8441-efa068c3582c; path=/; expires=Wed, 09
+        Feb 2028 22:01:32 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 27076e45b74dc77d772fef4cc0883d00
+      X-Kong-Upstream-Latency:
+      - '58'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '354'
+      X-Request-Id:
+      - 1031d9482a4e5d879b8f783fa3403640
+      X-Runtime:
+      - '0.052951'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a55b7b75dc3f-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"suresh.travis@test.com","name":"Suresh Travis","src":null,"role":"student","last_sign_in_ip":null,"id":108775125,"courses":[{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-07-25T14:18:59Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-07-25T14:21:01Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:33 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775124
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"288b682a50d48292f72bcc731873129d"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '353'
+      Ratelimit-Reset:
+      - '27'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=IK1lRwLCCGKo9fJlJJ_VOByWXbeiE8eJjMzkqOBubr8-1770674493-1.0.1.1-XXw_XmV1kX8XOvocvYf8MLwm2k.2hF15ZUmdaZUblfTzdfcEBncoMrMcrbbTEuziwUyPej3HFDHU9Drl13EJFJqOuuNZVeEkJ6lgAr2lcy8;
+        path=/; expires=Mon, 09-Feb-26 22:31:33 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=HbrEQyC1f86GiaYSChq8UErZo5_GZ_XQyw1TNV71RP0-1770674493733-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=0212be05-19f1-407d-8158-9ac547ae49e3; path=/; expires=Tue, 10 Feb
+        2026 02:01:33 GMT; SameSite=Lax; secure
+      - ahoy_visitor=ac79e76e-8c43-4356-a152-6150ecdf39b4; path=/; expires=Wed, 09
+        Feb 2028 22:01:33 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 06b34f54867cbe575d89ad769ebd2360
+      X-Kong-Upstream-Latency:
+      - '84'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '353'
+      X-Request-Id:
+      - 81beb81ade09e9f9ae0c6915b7e15625
+      X-Runtime:
+      - '0.075647'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a55d6a60e02c-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"jeremy.shuhao@test.com","name":"Jeremy Shuhao","src":null,"role":"student","last_sign_in_ip":null,"id":108775124,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-07-25T14:20:59Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2024-07-25T14:22:49Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:34 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775122
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0aec5dd5e012a86403e14f92cbdb6e20"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '352'
+      Ratelimit-Reset:
+      - '26'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=pAUhU_Pv4QDKAf3KUefvLPtjqZK5UXp.2a_shxXd8rc-1770674494-1.0.1.1-nuPNCwwl0KQxI59bxZmJH9EjFUibG.CZda4dNWjV5OsFFJ_FBGG.ME935DcE5vlZnhceu.NkkP9oIiVm1Pi8P0AsaSenqFQZhkwZROh589Y;
+        path=/; expires=Mon, 09-Feb-26 22:31:34 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=RL8XgGwaYiM9EBGDPBkT0VHQ_chaO4zL6KZybFdzTCY-1770674494160-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=2519c78e-b82c-434c-8e85-119d7f10e488; path=/; expires=Tue, 10 Feb
+        2026 02:01:34 GMT; SameSite=Lax; secure
+      - ahoy_visitor=8ac6664e-0c3b-4a7c-ad96-def551dd73a8; path=/; expires=Wed, 09
+        Feb 2028 22:01:34 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - ec3ecf6ff16cf86cad42c654eea9304d
+      X-Kong-Upstream-Latency:
+      - '82'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '352'
+      X-Request-Id:
+      - 3dd3a464f32d479393326c6b81f5790a
+      X-Runtime:
+      - '0.074777'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a562b9c036f6-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"ammar.yasir@test.com","name":"Ammar Yasir","src":null,"role":"student","last_sign_in_ip":null,"id":108775122,"courses":[{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-07-25T14:18:59Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-07-25T14:20:58Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2024-07-25T14:22:47Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:34 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775121
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"afb86668ff300d098e3e158556b87460"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '351'
+      Ratelimit-Reset:
+      - '26'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=J6PcIxRVQobMrlWGUT_sVRHmOp988kmDFwe3BJn2D1I-1770674494-1.0.1.1-qP0Vq28ca56m9OAWk8U6uTbzdS.X9RJ3K01GVmlk.2w.5CdwskJUx8cyiBzLw9_qiIqYQmY8PMLm_M_DYzBF5LyTJVxTw3.TePCPNDwywh0;
+        path=/; expires=Mon, 09-Feb-26 22:31:34 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=h9bGyflwHBuz_9rITo4uZhc9K4kMqqzT5I1LIhnugiI-1770674494518-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=816518e7-1b1b-4096-ba7f-a8d60a48d976; path=/; expires=Tue, 10 Feb
+        2026 02:01:34 GMT; SameSite=Lax; secure
+      - ahoy_visitor=41a61d30-f430-4ce3-9d7a-1bbfdd65ca17; path=/; expires=Wed, 09
+        Feb 2028 22:01:34 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - d1948b2fa47d561f481ff83229250d6f
+      X-Kong-Upstream-Latency:
+      - '96'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '351'
+      X-Request-Id:
+      - b62b2cf07f435fb76c6f0670b0648b37
+      X-Runtime:
+      - '0.076365'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5653e45dfae-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"bjaka.yamato@test.com","name":"Bjaka Yamato","src":null,"role":"student","last_sign_in_ip":null,"id":108775121,"courses":[{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-07-25T14:18:58Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-07-25T14:20:54Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:35 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/88958558
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"304b18a587e81f8f29c98ae34a2837c4"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '350'
+      Ratelimit-Reset:
+      - '26'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=F_ciW71yyVtOdwUSB7WeX5t7dStt10_bPEsvLawNaWU-1770674494-1.0.1.1-Gj4BSbUJhfwzdR44_14DblkjtGnQiKRudEZl7x_542iXmyHdd_151yXniqrrufI0a63KD4RRHF.yw.Hrtb9vaKIaIUYhezzP81TfqfDKyJw;
+        path=/; expires=Mon, 09-Feb-26 22:31:34 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=6SfDrdl0OnmZ_R2Hk7OxQprIKgGI3HGOb2P8aYYA3l0-1770674494875-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=24dffefe-3448-49f7-8bec-5fd395c19fa1; path=/; expires=Tue, 10 Feb
+        2026 02:01:34 GMT; SameSite=Lax; secure
+      - ahoy_visitor=eed6739b-fafd-45a5-81f0-5816118156e1; path=/; expires=Wed, 09
+        Feb 2028 22:01:34 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - dc817c7758d4ff6af912b00796ace305
+      X-Kong-Upstream-Latency:
+      - '79'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '350'
+      X-Request-Id:
+      - e00364febcca3e90ca374f37f465a18b
+      X-Runtime:
+      - '0.073375'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5675f460138-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"kristin.moser@teachable.com","name":"Ms. Ellie","src":null,"role":"owner","last_sign_in_ip":"216.158.137.35","id":88958558,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2024-04-03T23:21:54Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-03T23:21:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-04-03T23:21:37Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-04-03T23:22:02Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:35 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/104683905
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"99c403452808da3ad212d907f5ad6590"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '349'
+      Ratelimit-Reset:
+      - '25'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=1PAG9OdWfbOdO3WPo.HK6ih6VQLyywgyv9gLh5ktbUo-1770674495-1.0.1.1-e4GKc4B6NFl8wCw.ACjeK2xoLeY.79Op2wSfuetiKYWr.fYvRq.dRbjTuVLwo1U_DpJftELuxf8zxWw46pqJ7rtuxofn_5wQcr02ytoIwlM;
+        path=/; expires=Mon, 09-Feb-26 22:31:35 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=3nptvP_QOVNH0Y_go4vxpr41.xLWOfNOyFBaaT4jrMk-1770674495327-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=b90a8634-9149-4359-b051-43ffc1a63940; path=/; expires=Tue, 10 Feb
+        2026 02:01:35 GMT; SameSite=Lax; secure
+      - ahoy_visitor=52eeee01-00f3-462a-a9a6-facd3cedf366; path=/; expires=Wed, 09
+        Feb 2028 22:01:35 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 74eb2e104c2cd81aa5d8b75af1300803
+      X-Kong-Upstream-Latency:
+      - '73'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '349'
+      X-Request-Id:
+      - d0b01f9031632b644297609134163d5c
+      X-Runtime:
+      - '0.066285'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a569e8c58828-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"dylan-cruz@live.com","name":"dylan","src":null,"role":"student","last_sign_in_ip":null,"id":104683905,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-03-29T16:41:30Z","is_active_enrollment":true,"completed_at":"2024-03-29T16:50:33Z","percent_complete":100},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-02T17:36:52Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2025-09-08T20:50:38Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:35 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125316
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0782d23f0113bd638859bc2929ee4a20"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '348'
+      Ratelimit-Reset:
+      - '25'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=Jbhn_kZWhcvVwaDzx4FQ4vvxAjxSuWEbL_ps6_Tmsus-1770674496-1.0.1.1-RKfPJU6WnGuk_nCB_6pz65HaGuTxSCxZLSf3.blUP9jeqyMuY3IVVSGU.dv0MOs7wtqKL5e8d2L6Llcw0.bISbRhEmlYf0UWgd5wETLOU1E;
+        path=/; expires=Mon, 09-Feb-26 22:31:36 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=mGMO6IXU5IxKPYdGtvM3HAtmhbHSlUz.Q5kDijnhsE0-1770674496079-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=052ed6af-121a-4a1c-9d7d-0e4173ca953d; path=/; expires=Tue, 10 Feb
+        2026 02:01:35 GMT; SameSite=Lax; secure
+      - ahoy_visitor=e42ce202-0a31-4a26-98ab-2ffc0369f965; path=/; expires=Wed, 09
+        Feb 2028 22:01:35 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 7d4bbd1a659f2142114acd5401640d1c
+      X-Kong-Upstream-Latency:
+      - '96'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '348'
+      X-Request-Id:
+      - f4469a1f614b089c35984933dd6697df
+      X-Runtime:
+      - '0.089990'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a56c8f90fe12-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"jyotikaur@test.com","name":"Jyoti Kaur","src":null,"role":"student","last_sign_in_ip":null,"id":89125316,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:42:14Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:43Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-08-03T05:22:07Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:36 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125313
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4e8ed942b900994599500de8355c6120"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '347'
+      Ratelimit-Reset:
+      - '24'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=A.fHpbZJiVD18GshwDGrnghSR1HlkwJ2NbLCfNjXkRs-1770674496-1.0.1.1-Ox3P5JwFCWQ9sCmuD6CTSYD64gyHR6H8rDLJHe1a1gYRgbBBFJb5F4A17pFoBj4.FXpIeRUrrnjQS.F0TMis5sM2BKHnCEjs2Qge0aw1UMk;
+        path=/; expires=Mon, 09-Feb-26 22:31:36 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=kRV1hQmL_6OAgY8JqoUGqX1lPIoENMvDXrGcwc_AuWA-1770674496449-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=8f0db52c-507f-4773-a15c-eb55c890d997; path=/; expires=Tue, 10 Feb
+        2026 02:01:36 GMT; SameSite=Lax; secure
+      - ahoy_visitor=dd59bded-75b4-4918-a528-389c8f61d3f4; path=/; expires=Wed, 09
+        Feb 2028 22:01:36 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 769174303fb485419918890b4836df48
+      X-Kong-Upstream-Latency:
+      - '78'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '347'
+      X-Request-Id:
+      - ecfcdca1b0f6867abe0fe721241f0aa5
+      X-Runtime:
+      - '0.072057'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5716cf529a8-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"keeshafranklin@test.com","name":"Keesha Franklin","src":null,"role":"student","last_sign_in_ip":null,"id":89125313,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:36 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125160
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"909774f0bd882bf3b1cbca89b403d38c"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '346'
+      Ratelimit-Reset:
+      - '24'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=475Upm2uYbAPPjQE3tDdT_6EIfyZtMzJslOHu10E7VQ-1770674496-1.0.1.1-0Ls0QDXUpijZ9J9pWF8GUcEPpQEA8h1pc7G05dH4jVeHJqXfd2s8NM1SRPmw2Q28XyH_iQdtHTB8r3UKO0SPxoKYq.A6OP1FoVqXBg3E_ck;
+        path=/; expires=Mon, 09-Feb-26 22:31:36 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=ai6uZ9.EvfDdGgngDvFAAR47TVx2LJJ7I5hep6oSC9E-1770674496785-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=8b57275b-39d1-46df-941e-e9b0a4abc066; path=/; expires=Tue, 10 Feb
+        2026 02:01:36 GMT; SameSite=Lax; secure
+      - ahoy_visitor=2f8502f5-1428-46fd-ac2d-eaad93758a0d; path=/; expires=Wed, 09
+        Feb 2028 22:01:36 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 1a4e901cf852e90b690c6f5f7b6f5f2c
+      X-Kong-Upstream-Latency:
+      - '87'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '346'
+      X-Request-Id:
+      - 9967dea1ab6ef6a4b81ef6af4a8a1331
+      X-Runtime:
+      - '0.076124'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5737ee5b81e-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"arnoldperlstein@test.com","name":"Arnold Perlstein","src":null,"role":"student","last_sign_in_ip":null,"id":89125160,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2023-01-27T16:43:07Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:23:58Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:37 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125159
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"02c77ad27d70a95affb6fd429cbe124f"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '345'
+      Ratelimit-Reset:
+      - '23'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=N6X4P7trxer614VBvrWZ2G9FPj.Ci.T_0N2DXVkqgj8-1770674497-1.0.1.1-syJZ6zVO3ePVOPm98Z.f_rbZ5VYQqumkYlDZqiBsS9s9P23q.0g9iEAuhmRWX3tjcG_OdJUuuon214vjQ_h3oS7KT0kKPvGQBPbbcgL18hk;
+        path=/; expires=Mon, 09-Feb-26 22:31:37 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=1yr5inQQfZJRkKVy5OWHZwsBHpi0A1l8gbPhS9KYL2c-1770674497296-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=2d977fe7-6fc7-4c6e-a291-eaf7d28f7a34; path=/; expires=Tue, 10 Feb
+        2026 02:01:37 GMT; SameSite=Lax; secure
+      - ahoy_visitor=fc78977b-1d2f-4aa5-9c70-011575ec2c31; path=/; expires=Wed, 09
+        Feb 2028 22:01:37 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - dd226e5bb41fcd7dc14be1604196a37f
+      X-Kong-Upstream-Latency:
+      - '67'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '345'
+      X-Request-Id:
+      - 3f5d3ff40804edb260ebe7c58eb9e421
+      X-Runtime:
+      - '0.060295'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5759917a517-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"mrfrog@test.com","name":"Mr. Frog","src":null,"role":"student","last_sign_in_ip":null,"id":89125159,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2023-01-27T16:43:07Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:37 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125158
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"002bc91ab9d8932eb17c89d206806d9c"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '344'
+      Ratelimit-Reset:
+      - '23'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=pevYmIYB3YcLxj1fwfZNVUKTc97PzYw0WMaJxi4XhF8-1770674497-1.0.1.1-yz8HTw5XBZcZ0x3BwTothHOxGqhNkFRWn4S2rLFGb5c7y4CqTaOpcRDWC5y9MKXSQlfzMvcOpbOhvUHX0YrOZ0qQjsyQ1GLboDw3GHfXjNY;
+        path=/; expires=Mon, 09-Feb-26 22:31:37 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=drgw2ZsHaP9NOUxgBDL2K2JrDvLkWd90cZLaYdaSAnw-1770674497712-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=ba1d7ee4-8bea-4161-bd6f-8657d227a4f4; path=/; expires=Tue, 10 Feb
+        2026 02:01:37 GMT; SameSite=Lax; secure
+      - ahoy_visitor=ebc28938-21a0-407c-8411-ba969b2e13f3; path=/; expires=Wed, 09
+        Feb 2028 22:01:37 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 5dea2e0a9022b36cbb38a52df325fe4e
+      X-Kong-Upstream-Latency:
+      - '38'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '344'
+      X-Request-Id:
+      - 2db70a03874368309e66758e91a88f5e
+      X-Runtime:
+      - '0.032546'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a578cc391d2c-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"mrtoad@test.com","name":"Mr. Toad","src":null,"role":"student","last_sign_in_ip":null,"id":89125158,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:38 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125315
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"edb1570692addfb6ca8cc624a37551fd"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '343'
+      Ratelimit-Reset:
+      - '23'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=yfgiGEhUpJguyFr3U_WBzq6koAO80fEtUIgXEgwVq1w-1770674498-1.0.1.1-pj3IpPWDOQqopmt3FkZaCvVXq4ItTxje71nEAy7sYwwY0ZcuVZsUW7zf1fbuxpvq1nbHfPwobCavOwKfXQO5NUyPPZhHxkcspnbzKAH9itM;
+        path=/; expires=Mon, 09-Feb-26 22:31:38 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=4dp9hCFZlxfQ2Z7BXLTqmntzmW6aX7C5DiT4QYZzXPA-1770674498122-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=601fac4e-3ad3-4b96-91d3-ca824b73771d; path=/; expires=Tue, 10 Feb
+        2026 02:01:37 GMT; SameSite=Lax; secure
+      - ahoy_visitor=2f97f360-37d1-4a26-9304-6d23ad3612bd; path=/; expires=Wed, 09
+        Feb 2028 22:01:37 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 31b51822da56c32a2eb127767fb61621
+      X-Kong-Upstream-Latency:
+      - '86'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '343'
+      X-Request-Id:
+      - f2c7fb477c7f237658d82aa6ece3bace
+      X-Runtime:
+      - '0.080492'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a57bc97bce20-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"timwright@test.com","name":"Tim Wright","src":null,"role":"student","last_sign_in_ip":null,"id":89125315,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:42:14Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:24:01Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2023-01-27T16:43:07Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:38 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125314
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"5185e126ed56b7650de236dad9198deb"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '342'
+      Ratelimit-Reset:
+      - '22'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=tB01HIEgkqVKGTFIIcGgI.cb6UA53MgGbGISPtoqkJk-1770674498-1.0.1.1-oX8y91RDNiKwRjmD8uPzj41p4cGBK3YUpYqsANTPpe3ZIuxe30Uz1jRDeTlKNABHg1MexZ92.P8yVskMnZpHp2u0WzMMCiYKUA1YD7YX2PQ;
+        path=/; expires=Mon, 09-Feb-26 22:31:38 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=wYNvAW9B7GTV5.vvvNXODG9g5UyPeTTLz8LoZlDU..8-1770674498445-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=d8fb4e15-96c6-478f-b082-69574331b95b; path=/; expires=Tue, 10 Feb
+        2026 02:01:38 GMT; SameSite=Lax; secure
+      - ahoy_visitor=b6921c8d-61b6-4f8d-8745-bdf39e67da28; path=/; expires=Wed, 09
+        Feb 2028 22:01:38 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 77726e2d16f7412e677c9f47ed03e35d
+      X-Kong-Upstream-Latency:
+      - '59'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '342'
+      X-Request-Id:
+      - 0fc208fb82a2b20c981e4aae3e483c33
+      X-Runtime:
+      - '0.053079'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a57e0bfec6a6-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlbWFpbCI6ImNhcmxvc3JhbW9uQHRlc3QuY29tIiwibmFtZSI6IkNhcmxvcyBSYW3Ds24iLCJzcmMiOm51bGwsInJvbGUiOiJzdHVkZW50IiwibGFzdF9zaWduX2luX2lwIjpudWxsLCJpZCI6ODkxMjUzMTQsImNvdXJzZXMiOlt7ImNvdXJzZV9pZCI6MjAwMjQzNiwiY291cnNlX25hbWUiOiJIZXJiYWwgVGVhcyBcdTAwMjYgT3RoZXIgR2FyZGVuIFRpbmN0dXJlcyIsImVucm9sbGVkX2F0IjoiMjAyNC0wNy0yNVQxNDoyNDowMFoiLCJpc19hY3RpdmVfZW5yb2xsbWVudCI6dHJ1ZSwiY29tcGxldGVkX2F0IjpudWxsLCJwZXJjZW50X2NvbXBsZXRlIjowfSx7ImNvdXJzZV9pZCI6MjAwMjQzMCwiY291cnNlX25hbWUiOiJUcmVlcyBhbmQgQXJib3Jlb3VzIENvbmNlcm5zIiwiZW5yb2xsZWRfYXQiOiIyMDIzLTAxLTI3VDE2OjM1OjQyWiIsImlzX2FjdGl2ZV9lbnJvbGxtZW50Ijp0cnVlLCJjb21wbGV0ZWRfYXQiOm51bGwsInBlcmNlbnRfY29tcGxldGUiOjB9LHsiY291cnNlX2lkIjoyMDAyNDMxLCJjb3Vyc2VfbmFtZSI6Ik11c2hyb29tIE1hZG5lc3MiLCJlbnJvbGxlZF9hdCI6IjIwMjMtMDEtMjdUMTY6NDE6MzVaIiwiaXNfYWN0aXZlX2Vucm9sbG1lbnQiOnRydWUsImNvbXBsZXRlZF9hdCI6bnVsbCwicGVyY2VudF9jb21wbGV0ZSI6MH1dLCJ0YWdzIjpbXX0=
+  recorded_at: Mon, 09 Feb 2026 22:01:38 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125157
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2b5588d9e6a4d031af554f7dd7792e46"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '341'
+      Ratelimit-Reset:
+      - '22'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=QMQRaAInkVA.bBOocw6Wbf2mxEWkYSbnGjWpRuw9qNo-1770674498-1.0.1.1-4sZFSmFypAwtSHMDfV50qphG9l3rnNuzpMdhYwgfcejAfDQrKPMccYiIzoksf5ZcH4TGO0.1Scj5QVOUFnw8UOf5caUNDtpt5X._lNanOg0;
+        path=/; expires=Mon, 09-Feb-26 22:31:38 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=eOCO9dgW.wafW4FBl5GITXS5QcApPVErgaRL5WtSOxA-1770674498774-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=acbc4b2b-c486-4cc3-8906-26bb19bbeb83; path=/; expires=Tue, 10 Feb
+        2026 02:01:38 GMT; SameSite=Lax; secure
+      - ahoy_visitor=b30d7000-7a9c-4c6f-b4e9-0f67d3938b66; path=/; expires=Wed, 09
+        Feb 2028 22:01:38 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - eff4fb178a7fbd0ae3b03045ed2f3212
+      X-Kong-Upstream-Latency:
+      - '74'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '341'
+      X-Request-Id:
+      - 78db5ca9e77048fd021418932eff4021
+      X-Runtime:
+      - '0.067877'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5800d4d88b4-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"wandali@test.com","name":"Wanda Li","src":null,"role":"student","last_sign_in_ip":null,"id":89125157,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:42:13Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:41Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:39 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125156
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4ddde6fb4b9bafbe387e1bd69adff972"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '340'
+      Ratelimit-Reset:
+      - '21'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=Eujq7VUaRmOi8ceKiM__CGoaiSU76OlATZ8MNx1DKJ8-1770674500-1.0.1.1-31gBLLiCuL07AWfcgeB0pvEjsmrZcK2bRhrlRf_BmB5fWMwWRJZJFD8NRpdavAxC1XxUcUDg6JmzIFkPP2RwUOaWmeMCrwvSX7lA7fHv7A4;
+        path=/; expires=Mon, 09-Feb-26 22:31:40 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=5qskEMDmSl4bU5Wte.MFI0HmUD4FIC6REwuUzMEVIgQ-1770674500111-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=ffc69168-60bf-4bb3-a44e-6de629939a3c; path=/; expires=Tue, 10 Feb
+        2026 02:01:39 GMT; SameSite=Lax; secure
+      - ahoy_visitor=c7ff1231-096b-4133-b6b4-9d1407130c2e; path=/; expires=Wed, 09
+        Feb 2028 22:01:39 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 6093f55776ba525eb9e3532c5ef07648
+      X-Kong-Upstream-Latency:
+      - '67'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '340'
+      X-Request-Id:
+      - ef26522b00188755369e69637439b5d9
+      X-Runtime:
+      - '0.062085'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5885f3f8b2a-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"valeriefrizzle@test.com","name":"Valerie Frizzle","src":null,"role":"student","last_sign_in_ip":null,"id":89125156,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:41Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-04T22:11:32Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:40 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/courses/2002431/enrollments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"1ba2686899aac24a5d51fb70900579f6"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '339'
+      Ratelimit-Reset:
+      - '20'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=VRTquKCPHzZbmYK9STI4Yp446tSyS45VS_Ij5x2qZMg-1770674500-1.0.1.1-TExGjnBhBLmEguJHHqbfXEsJI7taFPMJ2SaifhmGQKUuJJXWjNNiRBS__GW_qzqAuFiwi7LbIOOhwcnlrffj6_EoIa9RONvzRwTPlTlFyAs;
+        path=/; expires=Mon, 09-Feb-26 22:31:40 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=n.hAxlM1TAVA.nrq9SLZQ7O_d8LMvXSmZsvtjlGQ0ys-1770674500411-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=a33e085d-4827-403e-bb7a-63f6aa68f0bf; path=/; expires=Tue, 10 Feb
+        2026 02:01:40 GMT; SameSite=Lax; secure
+      - ahoy_visitor=5067aa17-62c3-402c-98db-e9bc59b1b60a; path=/; expires=Wed, 09
+        Feb 2028 22:01:40 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - d39b8d68e994082161d12c44ad8f9424
+      X-Kong-Upstream-Latency:
+      - '55'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '339'
+      X-Request-Id:
+      - 3e074ad6430bcad10faa8de5e9d7be22
+      X-Runtime:
+      - '0.050061'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a58a5d491927-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"enrollments":[{"user_id":89126347,"enrolled_at":"2025-09-08T21:00:13Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775060,"enrolled_at":"2025-09-08T20:56:32Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":104683905,"enrolled_at":"2025-09-08T20:50:38Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775125,"enrolled_at":"2024-07-25T14:18:59Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775122,"enrolled_at":"2024-07-25T14:18:59Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775121,"enrolled_at":"2024-07-25T14:18:58Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":88958558,"enrolled_at":"2024-04-03T23:22:02Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125316,"enrolled_at":"2023-08-03T05:22:07Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125314,"enrolled_at":"2023-01-27T16:41:35Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125313,"enrolled_at":"2023-01-27T16:41:35Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125160,"enrolled_at":"2023-01-27T16:41:35Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125159,"enrolled_at":"2023-01-27T16:41:35Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125157,"enrolled_at":"2023-01-27T16:41:35Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125156,"enrolled_at":"2023-01-27T16:41:35Z","completed_at":null,"percent_complete":0,"expires_at":null}],"meta":{"total":14,"page":1,"from":1,"to":14,"per_page":0,"number_of_pages":1}}'
+  recorded_at: Mon, 09 Feb 2026 22:01:40 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89126347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b8a7e614b65a18dcea6c179996f162c6"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '338'
+      Ratelimit-Reset:
+      - '20'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=_E6J5RXfUnexB8KdU2J0dFzy87ZIHzPRBf0yvAOsBS0-1770674500-1.0.1.1-PVrnNYvx4kMLN2.qGS_Rl0gJh3Y8LXib4HGEAQNA63n_TSaNLWa7cEh_c3P01bl43xEDNF3KVdO9D0ggNoE0eBTZRi7Jl1OFSyJ_Zqj0HH0;
+        path=/; expires=Mon, 09-Feb-26 22:31:40 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=.ZqoPcE8k3XwKzi.iZID3fJ1nCPsEZMaXWWTRayFswc-1770674500707-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=9237c318-0478-4456-8788-b0fdadf3c1f6; path=/; expires=Tue, 10 Feb
+        2026 02:01:40 GMT; SameSite=Lax; secure
+      - ahoy_visitor=b28068a7-e3b6-4d67-8390-dfed3eb4686e; path=/; expires=Wed, 09
+        Feb 2028 22:01:40 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 8698bb3d3606a7560f4fa12dbc16f862
+      X-Kong-Upstream-Latency:
+      - '48'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '338'
+      X-Request-Id:
+      - ce0f0cf4d6da613c5dee6ca866183ed0
+      X-Runtime:
+      - '0.042580'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a58c396ffa0a-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"meredith.marks@teachable.com","name":"Meredith Marks","src":null,"role":"owner","last_sign_in_ip":"69.201.188.179","id":89126347,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2025-09-08T20:59:51Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2025-09-08T21:00:13Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2025-09-08T20:58:01Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:41 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775060
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c46121cd295e22e7c2f7e370141e941d"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '337'
+      Ratelimit-Reset:
+      - '20'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=oLi3eM7hUxRXOIYwxNldUByUovRytienbCBHV9wjBm4-1770674501-1.0.1.1-TYOjIAP5t1TLQ09BP92eP9pYiiLwjGPSGWU6BmYJrhCL9rBUqh.cN4Z3KUqL2j8pc5QVhycrMhFT6N.k6PiaHCPb4hqnbepICMY5Y1uexuk;
+        path=/; expires=Mon, 09-Feb-26 22:31:41 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=74xK.1NriuSninJM0DwzGg3O3o_u4fXB3TiBbP_FHH0-1770674501080-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=08a75ef5-c7b5-4498-b6ce-182eb28e983f; path=/; expires=Tue, 10 Feb
+        2026 02:01:40 GMT; SameSite=Lax; secure
+      - ahoy_visitor=ffb39320-833b-4b6c-bb5f-bf7dbd09f695; path=/; expires=Wed, 09
+        Feb 2028 22:01:40 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 9615f95c0b253b5257b3315e52d38b57
+      X-Kong-Upstream-Latency:
+      - '79'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '337'
+      X-Request-Id:
+      - b6e853beb90430ccd17f8b1b596a3222
+      X-Runtime:
+      - '0.073631'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a58e2dd2f16d-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"greny.jakob@test.com","name":"Greny Jakob","src":null,"role":"student","last_sign_in_ip":null,"id":108775060,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2024-07-25T14:22:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:24:03Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2025-09-08T20:56:32Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:41 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/104683905
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"99c403452808da3ad212d907f5ad6590"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '336'
+      Ratelimit-Reset:
+      - '19'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=bdqZmrnCY7WeCj1pFfVAurVl.of2p82ITevoOzLje6M-1770674501-1.0.1.1-JJ1d7Ov.GBZP_OyanDOJddp4R8_MtRO.kb2PyBTgCj4qrFBm_aR1Z_h0POYGxm.uuI1FdRRC1gX0VMlwLNTtMoPY04gLvSAwmyTgPnBht8E;
+        path=/; expires=Mon, 09-Feb-26 22:31:41 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=M41ySThS2eHmXMk1ZiTYhC0X1MTpRLydIc0elS6r99M-1770674501435-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=014f49d0-a4a9-4696-9fe7-9d5522d959bf; path=/; expires=Tue, 10 Feb
+        2026 02:01:41 GMT; SameSite=Lax; secure
+      - ahoy_visitor=f3dea191-a63e-4089-92fb-a002a29c0faa; path=/; expires=Wed, 09
+        Feb 2028 22:01:41 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 82b08e5462488b1975e8df3e0587a237
+      X-Kong-Upstream-Latency:
+      - '48'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '336'
+      X-Request-Id:
+      - 140590e7f6665a7485105da16dcee210
+      X-Runtime:
+      - '0.042627'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a590a8211d46-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"dylan-cruz@live.com","name":"dylan","src":null,"role":"student","last_sign_in_ip":null,"id":104683905,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-03-29T16:41:30Z","is_active_enrollment":true,"completed_at":"2024-03-29T16:50:33Z","percent_complete":100},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-02T17:36:52Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2025-09-08T20:50:38Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:41 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775125
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"fc259a6d0a25f02a10a1d93cfd26be99"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '335'
+      Ratelimit-Reset:
+      - '19'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=QAlZ_Fa_dH6iXRlTJDCvaltLgsVvCAO1OWg6uu1DbTI-1770674501-1.0.1.1-KtG1u7ImOQSRbsOCQOd2X3l6BbbU80Uf13b79qVbteDSel3rAHE5A8QbfSfpn5aZqUEEYdHIUBKiXmmVWVT3XqBuJ5CN_xpF37t.Q4VI6h8;
+        path=/; expires=Mon, 09-Feb-26 22:31:41 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=lgfOngFvrX3whnWV_I.JOcHjjqD4ujotCiioMP7b08c-1770674501875-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=c89cc202-95c2-4f15-924d-599e8a36ec1f; path=/; expires=Tue, 10 Feb
+        2026 02:01:41 GMT; SameSite=Lax; secure
+      - ahoy_visitor=bcaa769f-1ca8-4754-857c-af373e70259b; path=/; expires=Wed, 09
+        Feb 2028 22:01:41 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 19ee1e1238c6f178a7a7e372aa646c1f
+      X-Kong-Upstream-Latency:
+      - '72'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '335'
+      X-Request-Id:
+      - e110e90a3b0b46c35ffca50b6d7c008e
+      X-Runtime:
+      - '0.059068'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5936a14464c-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"suresh.travis@test.com","name":"Suresh Travis","src":null,"role":"student","last_sign_in_ip":null,"id":108775125,"courses":[{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-07-25T14:18:59Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-07-25T14:21:01Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:42 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775122
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0aec5dd5e012a86403e14f92cbdb6e20"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '334'
+      Ratelimit-Reset:
+      - '18'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=nsSU0SiD7WbtJXjD2GwV7lhs516lbMjShnfZh8x_KTY-1770674502-1.0.1.1-0Hw30EAzFOV.HwZ4FcKD6pF17MeNDt4PXE2da6J.zXiAs6TKA3cvb4Lp.xIS2UDNwtdmQ7E58uAWQR2J.1qH6hAAMm26XP68oFEe216iqbE;
+        path=/; expires=Mon, 09-Feb-26 22:31:42 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=4riNyNNOX3Rtk_4wIEWACF_Gsb7FtmIHV.RBMRlEF8M-1770674502210-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=bb3b08b8-346b-4408-b0df-c935e16371a1; path=/; expires=Tue, 10 Feb
+        2026 02:01:42 GMT; SameSite=Lax; secure
+      - ahoy_visitor=71e93d29-3dc1-4b17-bdc0-89b0528f6c47; path=/; expires=Wed, 09
+        Feb 2028 22:01:42 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - d9620d523a426c0e12194059cd05a964
+      X-Kong-Upstream-Latency:
+      - '66'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '334'
+      X-Request-Id:
+      - 0c2cb0bc180c9c59455882fae182ad9f
+      X-Runtime:
+      - '0.055578'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/csp-reporting.cloudflare.com\/cdn-cgi\/script_monitor\/report?m=fzBIKb7NYHoWQ4SoEdPJ.6tbHxoaTy6_1sLU96w_uvM-1770674502-1.0.1.1-6CjRc78KEuxhKlnlVBF6.qylN3sh_D83Er2rK9YOYw4OT.nvau8HgrqNuIe3TGIGby8rXQ_HyszhyGMZQshpWp0MJewLIJIO.MNc0RpAJBC9OkyyORKVkLMc1AwdFlvovJdCT6kHiqT3ll1JPBafXv_ryWY0NpFnFiem6aSLKxWd9Dx74u13tt2KArnBsYGQ"}],"group":"cf-csp-endpoint","max_age":86400}'
+      Content-Security-Policy-Report-Only:
+      - script-src 'none'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=fzBIKb7NYHoWQ4SoEdPJ.6tbHxoaTy6_1sLU96w_uvM-1770674502-1.0.1.1-6CjRc78KEuxhKlnlVBF6.qylN3sh_D83Er2rK9YOYw4OT.nvau8HgrqNuIe3TGIGby8rXQ_HyszhyGMZQshpWp0MJewLIJIO.MNc0RpAJBC9OkyyORKVkLMc1AwdFlvovJdCT6kHiqT3ll1JPBafXv_ryWY0NpFnFiem6aSLKxWd9Dx74u13tt2KArnBsYGQ;
+        report-to cf-csp-endpoint
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5958f2fb3a6-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"ammar.yasir@test.com","name":"Ammar Yasir","src":null,"role":"student","last_sign_in_ip":null,"id":108775122,"courses":[{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-07-25T14:18:59Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-07-25T14:20:58Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2024-07-25T14:22:47Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:42 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775121
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"afb86668ff300d098e3e158556b87460"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '333'
+      Ratelimit-Reset:
+      - '18'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=5O8NbDpxqg_mshHFWv_MaVIyxg0nW29b4kkOVCq_m90-1770674502-1.0.1.1-.YcqgPjH8WNr6i7j.D_Yer6uIcfxZ2AFnxIFe886QN1Q7YKzvWMz7zz9ObqgRgFMRmF7nu550sVKaW1DukOeodzuCQMumdz52Hm6CQSisho;
+        path=/; expires=Mon, 09-Feb-26 22:31:42 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=75AdI2yzFaXbQGrzvyfPCi.b1KfZMZxBuYnV8SdvJG0-1770674502605-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=b15d5d60-2480-4f10-8c49-b953f5be857a; path=/; expires=Tue, 10 Feb
+        2026 02:01:42 GMT; SameSite=Lax; secure
+      - ahoy_visitor=a93bb349-3ca6-4e41-9cfe-3813ff66c75e; path=/; expires=Wed, 09
+        Feb 2028 22:01:42 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 024d9b6cbec61d30cb56d740957eb67d
+      X-Kong-Upstream-Latency:
+      - '71'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '333'
+      X-Request-Id:
+      - 5b94fbce901ea2223bc596ec0d100ff9
+      X-Runtime:
+      - '0.060459'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a597dda4a4cc-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"bjaka.yamato@test.com","name":"Bjaka Yamato","src":null,"role":"student","last_sign_in_ip":null,"id":108775121,"courses":[{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-07-25T14:18:58Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-07-25T14:20:54Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:43 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/88958558
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"304b18a587e81f8f29c98ae34a2837c4"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '332'
+      Ratelimit-Reset:
+      - '18'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=GBeg_kRG6QYN55JWajDDQy3kYse1N_cLuDvu9wAL9ww-1770674502-1.0.1.1-r8CQZkQ4UJ0iOXFQxbzFHOfeKOb6ehO_SyPs5I42osh6TvbFBlmRsnaaeGS6hUopz0s9YhSeoP01XsplyQ0Ekf305R3wfHf_HaM8gXzGcCA;
+        path=/; expires=Mon, 09-Feb-26 22:31:42 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=qfnvYsHXMxwveTiKrxwOhdWBfvaCr6VwOxAGPbtUaXo-1770674502986-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=ee711a85-437f-4bac-a70f-8be8ac6a369e; path=/; expires=Tue, 10 Feb
+        2026 02:01:42 GMT; SameSite=Lax; secure
+      - ahoy_visitor=618ae8cb-3861-4cac-915f-5a7896434f52; path=/; expires=Wed, 09
+        Feb 2028 22:01:42 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 9a9fe21a88cdeb721d96b31f4ee8085b
+      X-Kong-Upstream-Latency:
+      - '95'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '332'
+      X-Request-Id:
+      - '096998a7b57fd7f698228c92762d9c95'
+      X-Runtime:
+      - '0.088381'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a59a2f7fc089-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"kristin.moser@teachable.com","name":"Ms. Ellie","src":null,"role":"owner","last_sign_in_ip":"216.158.137.35","id":88958558,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2024-04-03T23:21:54Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-03T23:21:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-04-03T23:21:37Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-04-03T23:22:02Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:43 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125316
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0782d23f0113bd638859bc2929ee4a20"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '331'
+      Ratelimit-Reset:
+      - '17'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=OFpzJzVRASUk0HTCa48YObrU5eCqtI3lYlwIrcnat7Y-1770674503-1.0.1.1-GW4J0555h_I03dsstqeAd3aFEt.4zBhhesyEYFXqqUp3AUC9sr0oJal2YgvC.VESQGEjMzPvbFFF3ibfDvSAgAUIsfOgQ2zAnhHV1gmP0C4;
+        path=/; expires=Mon, 09-Feb-26 22:31:43 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=dJ4ZF67wcFxx1lSMToROB41QcpWH7l28OUI4MOgF5PA-1770674503457-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=008f58ae-bb87-48e4-bfd7-6adeb63f752a; path=/; expires=Tue, 10 Feb
+        2026 02:01:43 GMT; SameSite=Lax; secure
+      - ahoy_visitor=d50bf4c4-41d9-4035-a1bd-4fa0b3ebc58e; path=/; expires=Wed, 09
+        Feb 2028 22:01:43 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 7cb5f777632a650f855af80092856717
+      X-Kong-Upstream-Latency:
+      - '178'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '331'
+      X-Request-Id:
+      - 25e9dc1476d3c59abcaa2934d3f14310
+      X-Runtime:
+      - '0.169894'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a59c9e4e886a-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"jyotikaur@test.com","name":"Jyoti Kaur","src":null,"role":"student","last_sign_in_ip":null,"id":89125316,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:42:14Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:43Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-08-03T05:22:07Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:44 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125314
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"5185e126ed56b7650de236dad9198deb"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '330'
+      Ratelimit-Reset:
+      - '17'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=M0W.B0y8zuXJ9nBWznwyfz9jGKFy.n_jgSQ7PpQE2Lw-1770674503-1.0.1.1-KLHtBp8Kcx_3F1xLeX1TKX172K.2Za6WOC3lb81v2yG_krN74vOgHg_t2dYwhMv2hXNiG2fd6ThLu53LpqK43KPM6IbWi7tpOuIth6cj5LU;
+        path=/; expires=Mon, 09-Feb-26 22:31:43 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=E.57heaqPzLmwP6ioNaqrQTtwN0m.i9r9rfkpboxdcE-1770674503824-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=9edb0b71-f521-400b-8a82-cbbab8dc6610; path=/; expires=Tue, 10 Feb
+        2026 02:01:43 GMT; SameSite=Lax; secure
+      - ahoy_visitor=bcee8149-c663-4d91-a347-5ed813138a18; path=/; expires=Wed, 09
+        Feb 2028 22:01:43 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 16f95612f533f61762a22e46822c6f72
+      X-Kong-Upstream-Latency:
+      - '74'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '330'
+      X-Request-Id:
+      - cb4fe2563af0389a0f7d51234042e3f3
+      X-Runtime:
+      - '0.067757'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a59f8c21a41b-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlbWFpbCI6ImNhcmxvc3JhbW9uQHRlc3QuY29tIiwibmFtZSI6IkNhcmxvcyBSYW3Ds24iLCJzcmMiOm51bGwsInJvbGUiOiJzdHVkZW50IiwibGFzdF9zaWduX2luX2lwIjpudWxsLCJpZCI6ODkxMjUzMTQsImNvdXJzZXMiOlt7ImNvdXJzZV9pZCI6MjAwMjQzNiwiY291cnNlX25hbWUiOiJIZXJiYWwgVGVhcyBcdTAwMjYgT3RoZXIgR2FyZGVuIFRpbmN0dXJlcyIsImVucm9sbGVkX2F0IjoiMjAyNC0wNy0yNVQxNDoyNDowMFoiLCJpc19hY3RpdmVfZW5yb2xsbWVudCI6dHJ1ZSwiY29tcGxldGVkX2F0IjpudWxsLCJwZXJjZW50X2NvbXBsZXRlIjowfSx7ImNvdXJzZV9pZCI6MjAwMjQzMCwiY291cnNlX25hbWUiOiJUcmVlcyBhbmQgQXJib3Jlb3VzIENvbmNlcm5zIiwiZW5yb2xsZWRfYXQiOiIyMDIzLTAxLTI3VDE2OjM1OjQyWiIsImlzX2FjdGl2ZV9lbnJvbGxtZW50Ijp0cnVlLCJjb21wbGV0ZWRfYXQiOm51bGwsInBlcmNlbnRfY29tcGxldGUiOjB9LHsiY291cnNlX2lkIjoyMDAyNDMxLCJjb3Vyc2VfbmFtZSI6Ik11c2hyb29tIE1hZG5lc3MiLCJlbnJvbGxlZF9hdCI6IjIwMjMtMDEtMjdUMTY6NDE6MzVaIiwiaXNfYWN0aXZlX2Vucm9sbG1lbnQiOnRydWUsImNvbXBsZXRlZF9hdCI6bnVsbCwicGVyY2VudF9jb21wbGV0ZSI6MH1dLCJ0YWdzIjpbXX0=
+  recorded_at: Mon, 09 Feb 2026 22:01:44 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125313
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4e8ed942b900994599500de8355c6120"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '329'
+      Ratelimit-Reset:
+      - '16'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=xmhtRvqEgI99sl.FXvHL3xfEmrNxO1wF24iUT0RMPmE-1770674504-1.0.1.1-xPqDHLiPxb8TIti.oa6N_eEy941CPj2uRzqmklhnzjJqV4ggf5dFXh6rO6heuMW9IvWfBTA9AaZQBoWHXshO73h2ZgDRAUbCEjLrQTikdKk;
+        path=/; expires=Mon, 09-Feb-26 22:31:44 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=iUwqGJhNMtrhFquFhjW3cp0BP78HUeQ3xaEN4DhhVwI-1770674504140-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=27837264-a7ea-4cff-bbe0-8626055824f0; path=/; expires=Tue, 10 Feb
+        2026 02:01:44 GMT; SameSite=Lax; secure
+      - ahoy_visitor=7954ee16-95b5-4949-b7b5-f6a5748840f0; path=/; expires=Wed, 09
+        Feb 2028 22:01:44 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - d856f30388ebe93d6f5945294c8f2461
+      X-Kong-Upstream-Latency:
+      - '50'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '329'
+      X-Request-Id:
+      - 6998d1c43a6c79789c32a061fae30ed3
+      X-Runtime:
+      - '0.044213'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5a1afe70174-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"keeshafranklin@test.com","name":"Keesha Franklin","src":null,"role":"student","last_sign_in_ip":null,"id":89125313,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:44 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125160
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"909774f0bd882bf3b1cbca89b403d38c"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '328'
+      Ratelimit-Reset:
+      - '16'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=lXoGN_oDJ468wjQvI8.rhTsdLl8dE8mQGZF5EXtViJA-1770674504-1.0.1.1-NbmVc9F8KsiwrlARtVK1Ui7YTrrWAQdzE5f_mph2LIBeF3TSHazYAaKny6rWIWNHuLg1yNT_KOZPU5DbXwC.Jctz0kq.F7rI7qjme6GJOmI;
+        path=/; expires=Mon, 09-Feb-26 22:31:44 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=UPyDzwjEXtvvemPsRjodUsgsloIZ_ElJ0tFIXzuUIok-1770674504550-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=37d564de-3982-4dd6-b181-4904a45336b1; path=/; expires=Tue, 10 Feb
+        2026 02:01:44 GMT; SameSite=Lax; secure
+      - ahoy_visitor=6ea9e345-4f85-4aa5-aec9-5be588800fc4; path=/; expires=Wed, 09
+        Feb 2028 22:01:44 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 4321bb4acd1f437c1800d10f6c8d0c31
+      X-Kong-Upstream-Latency:
+      - '70'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '328'
+      X-Request-Id:
+      - 43bc30676474439b90e08cb288f00dfa
+      X-Runtime:
+      - '0.064840'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5a419295417-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"arnoldperlstein@test.com","name":"Arnold Perlstein","src":null,"role":"student","last_sign_in_ip":null,"id":89125160,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2023-01-27T16:43:07Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:23:58Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:45 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125159
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"02c77ad27d70a95affb6fd429cbe124f"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '327'
+      Ratelimit-Reset:
+      - '15'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=L9N68AZt0Himy8cWA7y7y3Y5G88vbprHMEXkpy21VSk-1770674505-1.0.1.1-vg2xH.opY9AqzAQSXBEKcGqioeXWThJm4Wq13ZGyYorN001Ym7Lh5vuPN8gPEN9Uqg3hPogtpgFbT4hwk_FBm85zo71ZWqHTGKNUXK6tGR4;
+        path=/; expires=Mon, 09-Feb-26 22:31:45 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=m0764TJ6yuG40kQZ8UmLegzb2moB6kXWeS0xfBPdv.E-1770674505252-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=3186f900-b5e4-4e97-a97a-5bf804a693af; path=/; expires=Tue, 10 Feb
+        2026 02:01:45 GMT; SameSite=Lax; secure
+      - ahoy_visitor=514bc340-a8d1-4caa-b5c3-cf49a9faf198; path=/; expires=Wed, 09
+        Feb 2028 22:01:45 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 7e35656e9c82e9165ac3e25328277d4b
+      X-Kong-Upstream-Latency:
+      - '57'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '327'
+      X-Request-Id:
+      - 22d5fbde3c6e5085f28145080391b432
+      X-Runtime:
+      - '0.051016'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5a62ce1ca4a-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"mrfrog@test.com","name":"Mr. Frog","src":null,"role":"student","last_sign_in_ip":null,"id":89125159,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2023-01-27T16:43:07Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:45 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125157
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2b5588d9e6a4d031af554f7dd7792e46"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '326'
+      Ratelimit-Reset:
+      - '14'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=bDMyxDYdwFtHQceP2Pd0va5sLZZpZTV4Zwf.V6jcrx4-1770674506-1.0.1.1-2irwQkhhIBSCUOmJWffN.MVbbShLDyqLMCaFULenusuaAm9aZVuZQDvZfonPr7Lebs4qOPCvziRSYZkP2SSoQxPzqiSBLVOplxHSVHKM1E8;
+        path=/; expires=Mon, 09-Feb-26 22:31:46 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=7JVrnrLA5TY1pg4dT82C6gUIU0.LQi7Eual9MBCfku8-1770674506707-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=878c518c-7c79-41e0-b2b0-b9391610f1cb; path=/; expires=Tue, 10 Feb
+        2026 02:01:46 GMT; SameSite=Lax; secure
+      - ahoy_visitor=53ca6012-a14b-426a-9f2f-f3221abeef20; path=/; expires=Wed, 09
+        Feb 2028 22:01:46 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 6b86254bebc8ee15cb190a3484ce8f7b
+      X-Kong-Upstream-Latency:
+      - '76'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '326'
+      X-Request-Id:
+      - 4ecf067517bd75eac4d9fe97afbe2752
+      X-Runtime:
+      - '0.070486'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5b17e90f191-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"wandali@test.com","name":"Wanda Li","src":null,"role":"student","last_sign_in_ip":null,"id":89125157,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:42:13Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:41Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:47 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125156
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4ddde6fb4b9bafbe387e1bd69adff972"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '325'
+      Ratelimit-Reset:
+      - '13'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=6bJL.1xRtZuRFdP.FyaBkza8mY3fVc5jadG3ScE_T2E-1770674507-1.0.1.1-4sf7dITmySY5hyWvpQxgwr5gGmvL.2WqXJW6HtWD.V6Ww7g4FvvMrhMz47VZyzmvLPKqGmguEGiXLcrSgfFbj04EI9xGElaIjuG9LLJuBto;
+        path=/; expires=Mon, 09-Feb-26 22:31:47 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=CLPxge16oI7.3RXe0uvZJJWuDHTpCDDFkz26Tw2_KcE-1770674507438-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=384ff92c-0c6a-4c2e-9e67-dac860477ce7; path=/; expires=Tue, 10 Feb
+        2026 02:01:47 GMT; SameSite=Lax; secure
+      - ahoy_visitor=60d5469a-221c-4fcb-9038-dc0f43d8b4ea; path=/; expires=Wed, 09
+        Feb 2028 22:01:47 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 7ecb7e3444847d221e321c5585b4375f
+      X-Kong-Upstream-Latency:
+      - '71'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '325'
+      X-Request-Id:
+      - ff0ab9eb0dc5c0597bb1bd1a8db059ad
+      X-Runtime:
+      - '0.063630'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5b3fe88c8ae-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"valeriefrizzle@test.com","name":"Valerie Frizzle","src":null,"role":"student","last_sign_in_ip":null,"id":89125156,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:41Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-04T22:11:32Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:47 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/courses/2002436/enrollments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"be10f93d8320dcb10692f4ad30f5b5e6"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '324'
+      Ratelimit-Reset:
+      - '13'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=qDr3IeBB.uuo8WTVltVd.CdWkmU1r3LAjgEljIrpRdw-1770674507-1.0.1.1-w.RmFIeiKi0jm_z67b7WIjSYFaj3o4PNyQuik.LPKecg29mXv4E32Kq2rf67cdLq4g52kq8FnaIdLR6Iv8U2bA4tR5XmP.9oBqKQlwlZi7I;
+        path=/; expires=Mon, 09-Feb-26 22:31:47 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=IoTIsJV3BbQwqH1s.csoSFSSp8FP8Y.qeAd5q4L5xdk-1770674507868-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=0bba975a-e19d-4c15-b6db-e10f2117157c; path=/; expires=Tue, 10 Feb
+        2026 02:01:47 GMT; SameSite=Lax; secure
+      - ahoy_visitor=0e0aaf47-4dc0-41bb-8e68-730c763e64fa; path=/; expires=Wed, 09
+        Feb 2028 22:01:47 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - e7d04b6a65fad12a150c9061c53c865b
+      X-Kong-Upstream-Latency:
+      - '68'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '324'
+      X-Request-Id:
+      - e43721fdb5d190839539f103bc46cbd5
+      X-Runtime:
+      - '0.063237'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5b8bbea00c1-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"enrollments":[{"user_id":89126347,"enrolled_at":"2025-09-08T20:59:51Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775060,"enrolled_at":"2024-07-25T14:24:03Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108774922,"enrolled_at":"2024-07-25T14:24:02Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89126037,"enrolled_at":"2024-07-25T14:24:02Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125315,"enrolled_at":"2024-07-25T14:24:01Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125314,"enrolled_at":"2024-07-25T14:24:00Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125160,"enrolled_at":"2024-07-25T14:23:58Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775064,"enrolled_at":"2024-07-25T14:18:43Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108775061,"enrolled_at":"2024-07-25T14:18:43Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108774925,"enrolled_at":"2024-07-25T14:18:42Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108774924,"enrolled_at":"2024-07-25T14:18:41Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":108774923,"enrolled_at":"2024-07-25T14:18:40Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125156,"enrolled_at":"2024-04-04T22:11:32Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":88958558,"enrolled_at":"2024-04-03T23:21:45Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":104683905,"enrolled_at":"2024-04-02T17:36:52Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125316,"enrolled_at":"2023-01-27T16:44:45Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125157,"enrolled_at":"2023-01-27T16:44:45Z","completed_at":null,"percent_complete":0,"expires_at":null},{"user_id":89125313,"enrolled_at":"2023-01-27T16:44:45Z","completed_at":null,"percent_complete":0,"expires_at":null}],"meta":{"total":18,"page":1,"from":1,"to":18,"per_page":0,"number_of_pages":1}}'
+  recorded_at: Mon, 09 Feb 2026 22:01:48 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89126347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b8a7e614b65a18dcea6c179996f162c6"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '323'
+      Ratelimit-Reset:
+      - '12'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=tn1yfyDIAMY144qX43k9EUSeTk0X7u35WRlTGCP2UZA-1770674508-1.0.1.1-vbXJ2_Y8cRmqkZRc3ywNn7Igsfw9cNb04taFU1McJYNmIUKChZJhxqzhq_Vt.V8IhEH728MyGiBsUOV5R8mKQ6q6VFQ.SWekWL.mIp.wJUY;
+        path=/; expires=Mon, 09-Feb-26 22:31:48 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=rPjatiagqTCPo_w8aoY4Hkh1vyb6EyfUeo4Vuixlue4-1770674508192-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=4cc0dfc3-f654-47bb-94fd-0b1fb5fc7883; path=/; expires=Tue, 10 Feb
+        2026 02:01:48 GMT; SameSite=Lax; secure
+      - ahoy_visitor=75d891dd-05dc-4b16-b5a3-7806a96575d0; path=/; expires=Wed, 09
+        Feb 2028 22:01:48 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - bee06115f333ca596042a3263cace049
+      X-Kong-Upstream-Latency:
+      - '48'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '323'
+      X-Request-Id:
+      - a07c568d99b1ce3850d1f9230177aa03
+      X-Runtime:
+      - '0.042817'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5bafa1fa3f0-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"meredith.marks@teachable.com","name":"Meredith Marks","src":null,"role":"owner","last_sign_in_ip":"69.201.188.179","id":89126347,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2025-09-08T20:59:51Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2025-09-08T21:00:13Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2025-09-08T20:58:01Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:48 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775060
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c46121cd295e22e7c2f7e370141e941d"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '322'
+      Ratelimit-Reset:
+      - '12'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=EK_3Tcs.FbbyTQHaLSWwUgHRi4_4kQCc8GOkti3IbMw-1770674508-1.0.1.1-K3F6xD7YI5.R1SM_VzH9neK4uLmvO8N5xebdsXjKUkisEWag_LAUurrig6ANn0ilxgjHO5ikE5sjfD4kbiiIZBFU5eobe_onfpPBgUyRzYE;
+        path=/; expires=Mon, 09-Feb-26 22:31:48 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=t7_YcMYKlWcAeOM65K5TqHFxNzIQdrkkkdnpoSaVtQ8-1770674508541-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=f09ee1f1-accc-4b20-8e03-87bb7dac3a3b; path=/; expires=Tue, 10 Feb
+        2026 02:01:48 GMT; SameSite=Lax; secure
+      - ahoy_visitor=4d188130-1f29-4800-97ac-583d44b4579b; path=/; expires=Wed, 09
+        Feb 2028 22:01:48 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - e8f3fc18f9502446a10c556d44d1a078
+      X-Kong-Upstream-Latency:
+      - '70'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '322'
+      X-Request-Id:
+      - 211ac582c1bc9ee21aa060df72be3d34
+      X-Runtime:
+      - '0.064070'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5bcf9418a23-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"greny.jakob@test.com","name":"Greny Jakob","src":null,"role":"student","last_sign_in_ip":null,"id":108775060,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2024-07-25T14:22:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:24:03Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2025-09-08T20:56:32Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:49 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108774922
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"1a8c6eeaac1d29d53e04a27ab1d646af"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '321'
+      Ratelimit-Reset:
+      - '12'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=hhEgeFtGbBHL1E57tFu6cBTCFS1fyKJle0j4wooZIPs-1770674508-1.0.1.1-dhqG7sQSp5U7h83wMu8k0H76a2kZfciYnSK8UL4kV79Yw5v4zUJRmV8C5kwdrHlBk6GteQQmnwFTiXqyzmUg4HcUTEkOUNF8Yn94y35yzdI;
+        path=/; expires=Mon, 09-Feb-26 22:31:48 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=2LpGbcd5bWCYSZi.GLw7Vkw4U68m38J0CZHYZf0eI1A-1770674508831-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=a91a51a5-c84c-4fe3-84eb-ddd33bca0a48; path=/; expires=Tue, 10 Feb
+        2026 02:01:48 GMT; SameSite=Lax; secure
+      - ahoy_visitor=2bc00abe-dd28-4f60-b0da-e41d778115ed; path=/; expires=Wed, 09
+        Feb 2028 22:01:48 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - ea0426397e4e4a7ab77a964b43ea0359
+      X-Kong-Upstream-Latency:
+      - '48'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '321'
+      X-Request-Id:
+      - 65031155d7696200f7a8967def5f0e91
+      X-Runtime:
+      - '0.043955'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5bf0d21d4ad-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"hua.alvin@test.com","name":"Hua Alvin","src":null,"role":"student","last_sign_in_ip":null,"id":108774922,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2024-07-25T14:10:37Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:24:02Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:49 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89126037
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"854f6f2fcf6522aea27baab0ce3d9db4"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '320'
+      Ratelimit-Reset:
+      - '11'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=4QObrcvi4ufHGbPLxSDs8s.VDiCFEDjKiQZLXr2L_eI-1770674509-1.0.1.1-Zhnq3MlWWZgnrEOUpgIH..PG2lRz1xvyRGqjrVSc7v_6GGcZGh__k3yFtfu1Oyn6XJ563EKhc86ipOvBqrkQJ3U6wA5pULxRLGXcMr.xoV0;
+        path=/; expires=Mon, 09-Feb-26 22:31:49 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=voXyC1wvS6s3pub52cixS8jqF_Fo2N74wZ_a9yiSyLM-1770674509434-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=318b2c41-c5af-4771-8599-2f93731ba2c6; path=/; expires=Tue, 10 Feb
+        2026 02:01:49 GMT; SameSite=Lax; secure
+      - ahoy_visitor=354a15e9-bd1b-4319-a188-e07adf684d84; path=/; expires=Wed, 09
+        Feb 2028 22:01:49 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - bd76fb2386676e2b0ae79c52f1ab8d7e
+      X-Kong-Upstream-Latency:
+      - '292'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '320'
+      X-Request-Id:
+      - 1e791feee7913eb28229cc8ceefebb29
+      X-Runtime:
+      - '0.286469'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5c13a591d38-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"phoebeterese@test.com","name":"Phoebe Terese","src":null,"role":"student","last_sign_in_ip":null,"id":89126037,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:43:53Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:24:02Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2023-01-27T16:43:08Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:49 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125315
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"edb1570692addfb6ca8cc624a37551fd"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '319'
+      Ratelimit-Reset:
+      - '11'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=YXlp8SpOg9lqRi84EtWsxZeTiwL.PMy_derVv.J2.M0-1770674509-1.0.1.1-rpkbmp4HK7PcOee2iFl0iv5S0My9y3KTSKVFbdjf1idxRfYh10Eh5KKpwjDC3WN3t0TuBZh.5K0U_C6JwzMSgZ5fKpSZ.DGJD6o45g89QVU;
+        path=/; expires=Mon, 09-Feb-26 22:31:49 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=zMniJrHYqos_OydWn1Pe_G05T1QvT2jwoFy2gjV6Vrw-1770674509791-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=77987481-dc14-4b11-9d4b-e454b9aea43a; path=/; expires=Tue, 10 Feb
+        2026 02:01:49 GMT; SameSite=Lax; secure
+      - ahoy_visitor=b60ce698-82e5-4da3-b74b-093f27414550; path=/; expires=Wed, 09
+        Feb 2028 22:01:49 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - a131b32a7368324cd45a7c5b2854812e
+      X-Kong-Upstream-Latency:
+      - '104'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '319'
+      X-Request-Id:
+      - 69d73e0c4f806bac656eb66f7d958952
+      X-Runtime:
+      - '0.099064'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5c4aaec8046-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"timwright@test.com","name":"Tim Wright","src":null,"role":"student","last_sign_in_ip":null,"id":89125315,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:42:14Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:24:01Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2023-01-27T16:43:07Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:50 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125314
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"5185e126ed56b7650de236dad9198deb"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '318'
+      Ratelimit-Reset:
+      - '11'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=7G2znksw9sQHSpyj5EQT99tmVhcGjRCtwiDH0UVBL34-1770674510-1.0.1.1-q8cijhnTp7Tp1GhxSrBzrxpG3o6Jspy2RH2bap.SlDxa.802TfLTIE8xt6GQywM8yGXum6QP.XcpBvlgI0xQPE0IB7io0KseYBImUh6ehcQ;
+        path=/; expires=Mon, 09-Feb-26 22:31:50 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=gV.dt4jiOT23JsoXlxGcAlnZRGH6a34k1ooW2S9yooM-1770674510099-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=6527e063-26e4-462c-91af-f327449e9614; path=/; expires=Tue, 10 Feb
+        2026 02:01:50 GMT; SameSite=Lax; secure
+      - ahoy_visitor=7fca57c4-8421-4b62-9a96-173dde1cfccf; path=/; expires=Wed, 09
+        Feb 2028 22:01:50 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - fe73df30cd05610d1d51c96fbceada54
+      X-Kong-Upstream-Latency:
+      - '47'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '318'
+      X-Request-Id:
+      - eb4b33be547b36b8ba67c22caac3fda8
+      X-Runtime:
+      - '0.043369'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5c6ea74196f-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlbWFpbCI6ImNhcmxvc3JhbW9uQHRlc3QuY29tIiwibmFtZSI6IkNhcmxvcyBSYW3Ds24iLCJzcmMiOm51bGwsInJvbGUiOiJzdHVkZW50IiwibGFzdF9zaWduX2luX2lwIjpudWxsLCJpZCI6ODkxMjUzMTQsImNvdXJzZXMiOlt7ImNvdXJzZV9pZCI6MjAwMjQzNiwiY291cnNlX25hbWUiOiJIZXJiYWwgVGVhcyBcdTAwMjYgT3RoZXIgR2FyZGVuIFRpbmN0dXJlcyIsImVucm9sbGVkX2F0IjoiMjAyNC0wNy0yNVQxNDoyNDowMFoiLCJpc19hY3RpdmVfZW5yb2xsbWVudCI6dHJ1ZSwiY29tcGxldGVkX2F0IjpudWxsLCJwZXJjZW50X2NvbXBsZXRlIjowfSx7ImNvdXJzZV9pZCI6MjAwMjQzMCwiY291cnNlX25hbWUiOiJUcmVlcyBhbmQgQXJib3Jlb3VzIENvbmNlcm5zIiwiZW5yb2xsZWRfYXQiOiIyMDIzLTAxLTI3VDE2OjM1OjQyWiIsImlzX2FjdGl2ZV9lbnJvbGxtZW50Ijp0cnVlLCJjb21wbGV0ZWRfYXQiOm51bGwsInBlcmNlbnRfY29tcGxldGUiOjB9LHsiY291cnNlX2lkIjoyMDAyNDMxLCJjb3Vyc2VfbmFtZSI6Ik11c2hyb29tIE1hZG5lc3MiLCJlbnJvbGxlZF9hdCI6IjIwMjMtMDEtMjdUMTY6NDE6MzVaIiwiaXNfYWN0aXZlX2Vucm9sbG1lbnQiOnRydWUsImNvbXBsZXRlZF9hdCI6bnVsbCwicGVyY2VudF9jb21wbGV0ZSI6MH1dLCJ0YWdzIjpbXX0=
+  recorded_at: Mon, 09 Feb 2026 22:01:50 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125160
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"909774f0bd882bf3b1cbca89b403d38c"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '317'
+      Ratelimit-Reset:
+      - '10'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=ayXVP5FSC5sdt.pW37tywLLU5CNaS0afMOdV6lVlHzU-1770674510-1.0.1.1-YIJqzKtaysFYw6AeHrU9z8RSvYVBe8a2Dt7ZoWgHQ.wfWLkskmPnnvfY9V5t2LWPLTKZHvECNeSNHOlgaWdtMeSp792CF179v.bmbRqY7uw;
+        path=/; expires=Mon, 09-Feb-26 22:31:50 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=5fox2lXiYNct2A0hS4bLHSjmbwexl5tL7PK4EMNXhjA-1770674510486-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=3cb63e38-0d4a-47b1-ab06-137781907f46; path=/; expires=Tue, 10 Feb
+        2026 02:01:50 GMT; SameSite=Lax; secure
+      - ahoy_visitor=d748eb75-39b6-4ef9-afe7-3370aa999bdc; path=/; expires=Wed, 09
+        Feb 2028 22:01:50 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 1d6cb478b0ef0b0c01c71166789ad459
+      X-Kong-Upstream-Latency:
+      - '77'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '317'
+      X-Request-Id:
+      - 1e540cc166eed15ba6b4dd0959254aa1
+      X-Runtime:
+      - '0.071425'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5c92a128712-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"arnoldperlstein@test.com","name":"Arnold Perlstein","src":null,"role":"student","last_sign_in_ip":null,"id":89125160,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2023-01-27T16:43:07Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:23:58Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:51 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775064
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0d28d60cee1af6a4a50a923b56c6a88a"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '316'
+      Ratelimit-Reset:
+      - '10'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=HWr1EqE9yBMYcVA0zfqnUsg7TQHcsxH4UxbCaB99XWA-1770674510-1.0.1.1-k4wyaM8wmy3V7iUk8sMACFh6W_3pKPicpIVzag9s4kGLT3a2iLBtWgXQkCcJklEbdtiN09kOVZTdH86NR1YOd7.jCrxRYDdLfk0Kr6tgyu8;
+        path=/; expires=Mon, 09-Feb-26 22:31:50 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=tMiEdngaKEI.DZqGESR1jdr17xtliW5mdJjqsT7VPKU-1770674510812-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=3a4bf7f6-5773-4d0c-942d-825360686685; path=/; expires=Tue, 10 Feb
+        2026 02:01:50 GMT; SameSite=Lax; secure
+      - ahoy_visitor=83fc6103-0477-47a5-b6b3-29d8f7377f66; path=/; expires=Wed, 09
+        Feb 2028 22:01:50 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - a9b2ce437d030342ffc3076bb686ee49
+      X-Kong-Upstream-Latency:
+      - '41'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '316'
+      X-Request-Id:
+      - 04a3412244caf633844581b1f47a2acb
+      X-Runtime:
+      - '0.035804'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5cb7d0bf21d-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"xochitl.danbi@test.com","name":"Xochitl Danbi","src":null,"role":"student","last_sign_in_ip":null,"id":108775064,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:18:43Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:51 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108775061
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"248cbe885cabc58cb34f799c587fae95"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '315'
+      Ratelimit-Reset:
+      - '9'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=qD9DxYeyD3iesNg2PXVhhgdf56Pnp_13FBOTBuy0ZLU-1770674511-1.0.1.1-1CUS3xGW3Ro.RuB9pmSSMoFP1x.MkYw4wIsEju8qFF3LTqV46Rcnm0Ff8KxDo0XskMHn220NfpxKqyA2tRwYbUskIZh3I7wfJZ1Bvp8FJ4M;
+        path=/; expires=Mon, 09-Feb-26 22:31:51 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=QY_uAzgXfjrxiKOFaue1G85mupqH8NSLhagqlvM5SL8-1770674511155-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=53ff743e-5fe8-4785-888a-b4a5744c3c31; path=/; expires=Tue, 10 Feb
+        2026 02:01:51 GMT; SameSite=Lax; secure
+      - ahoy_visitor=d060dae6-678f-44e1-8341-f25a68cfb90a; path=/; expires=Wed, 09
+        Feb 2028 22:01:51 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - dfdfe559756a7f0bbfadff4a8890cd0d
+      X-Kong-Upstream-Latency:
+      - '70'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '315'
+      X-Request-Id:
+      - e8c8ed6a89253c194fc2f2c003cc0177
+      X-Runtime:
+      - '0.064352'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5cd5bac6e54-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"sanghan.delsy@test.com","name":"Sanghan Delsy","src":null,"role":"student","last_sign_in_ip":null,"id":108775061,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:18:43Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2025-09-08T20:54:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:51 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108774925
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"21f7151cdd963aae6cc0f61d09c8d173"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '314'
+      Ratelimit-Reset:
+      - '9'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=pCul_v9.qqJ_dzr0sB4HnM877TZNtRRRRIOyD8yBEHo-1770674511-1.0.1.1-nFSeJTAtk6gvnAEAyT5kzkMxT44PxdHXXs2gm5cN56ZxdvQGMnFF_N2qcgLi8VO.X1Of.wGmEoOloOcOQXBg_swDKyXRe_.QVT0FCoZz7tY;
+        path=/; expires=Mon, 09-Feb-26 22:31:51 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=y3lnrp7hMLq.TEDjfU1hnt3W7xhjm0lqQkDzekauqvo-1770674511522-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=ba8e4ee3-0872-4aac-9a6a-104ab20fab60; path=/; expires=Tue, 10 Feb
+        2026 02:01:51 GMT; SameSite=Lax; secure
+      - ahoy_visitor=9dccd5d1-50ee-43e8-8b99-d40e5b84a2a8; path=/; expires=Wed, 09
+        Feb 2028 22:01:51 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 270f1d35a574966a05089943447bd12d
+      X-Kong-Upstream-Latency:
+      - '75'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '314'
+      X-Request-Id:
+      - 614f9e41c3ccf7d578b58c194814f5f2
+      X-Runtime:
+      - '0.070128'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5cfa98efd60-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"anjali.beverly@test.com","name":"Anjali Beverly","src":null,"role":"student","last_sign_in_ip":null,"id":108774925,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2024-07-25T14:10:40Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2024-07-25T14:11:59Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:18:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:52 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108774924
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0bf631341317284e97af29c8fa75c386"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '313'
+      Ratelimit-Reset:
+      - '9'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=oAAYhbntZorsQvaY3TJkgSdu1d4op7SAsBwjVpJlG4s-1770674511-1.0.1.1-G8Ki.zQTBZV10VIkB4.FTPzxFFUGtPEVORnMC4yza4gofZhnX5deDnb7qt6cS5xyE.4GLbi5s_YxixG2TfKbdLADHIQbvSpfN5G1ZoK0Sr0;
+        path=/; expires=Mon, 09-Feb-26 22:31:51 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=Rk6ZTa3Fb4_qTd3xqR3ThLsUomcytMdC.n8IReKtOdg-1770674511860-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=508a7696-19c4-435b-8907-891761e675c9; path=/; expires=Tue, 10 Feb
+        2026 02:01:51 GMT; SameSite=Lax; secure
+      - ahoy_visitor=4440f87d-96d0-4110-9d7a-b5e6bbbeb27e; path=/; expires=Wed, 09
+        Feb 2028 22:01:51 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 17e80937afae2b00391c954ac9a05952
+      X-Kong-Upstream-Latency:
+      - '52'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '313'
+      X-Request-Id:
+      - e2fb4b078d29a1b932c17c93d1d41186
+      X-Runtime:
+      - '0.047129'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5d1efe38a4f-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"c.shreya@test.com","name":"Claudette Shreya","src":null,"role":"student","last_sign_in_ip":null,"id":108774924,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2024-07-25T14:10:40Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:18:41Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2024-07-25T14:11:58Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:52 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/108774923
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"749505c02102b5903a1132f0a2c087d3"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '312'
+      Ratelimit-Reset:
+      - '8'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=jNMY7._RJjOnb2HKDxKpY1aceM2TOw6n318OKBiByi0-1770674512-1.0.1.1-1MaWlajZax6PsMjSc66IJ5U.5MyKp9G8.KVVJ52SM9aJrebNPCRWn1ydZfxSAWy.9N5uXdWFHZc7bCsm_CHEnnDNV3nVcCJeweChxNPI8Gg;
+        path=/; expires=Mon, 09-Feb-26 22:31:52 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=ahuHVp4mFGa9JPiJDpFWNwUAXDm2F4bAee5OzUOQOoU-1770674512241-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=359cc19c-877e-4e5c-a554-37fa88966cb7; path=/; expires=Tue, 10 Feb
+        2026 02:01:52 GMT; SameSite=Lax; secure
+      - ahoy_visitor=ab201e08-a56b-451a-b423-5ef934f1165f; path=/; expires=Wed, 09
+        Feb 2028 22:01:52 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '3'
+      X-Kong-Request-Id:
+      - d7c19f2d608ade434b49676014fafa4e
+      X-Kong-Upstream-Latency:
+      - '89'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '312'
+      X-Request-Id:
+      - e31753fb21933a3299bed32dc2e04cfd
+      X-Runtime:
+      - '0.075436'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5d3ff228b2a-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"luna.june@test.com","name":"Luna June","src":null,"role":"student","last_sign_in_ip":null,"id":108774923,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2024-07-25T14:10:39Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-07-25T14:18:40Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:52 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125156
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4ddde6fb4b9bafbe387e1bd69adff972"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '311'
+      Ratelimit-Reset:
+      - '8'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=_VSs5KvCLyMtNNbGRbC6WgGrVggvn_4jkoiQ0uMXi4I-1770674512-1.0.1.1-QcuJHFQ9UAdbDCvUkMQjMgrHwriDXLZrFMpHfi6ilNjEMSS_ftmjAxHl3bbWdK8BPH9qPVd5KUwAsgDua5l._Y7rdmrq9.MXdTTFiVPFLNc;
+        path=/; expires=Mon, 09-Feb-26 22:31:52 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=me.HglDWlEh02LQj5dDzogg6ZI_cqnrslsVk.zhFPf4-1770674512685-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=f81e41f2-fae9-4a02-82b3-e1c0ac023eec; path=/; expires=Tue, 10 Feb
+        2026 02:01:52 GMT; SameSite=Lax; secure
+      - ahoy_visitor=9a3007a3-ca5e-4e56-a03b-b95e1d206021; path=/; expires=Wed, 09
+        Feb 2028 22:01:52 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 8109682495da8a11338a38237cf2e614
+      X-Kong-Upstream-Latency:
+      - '57'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '311'
+      X-Request-Id:
+      - 54cc6c606d32b2623790010b295d3464
+      X-Runtime:
+      - '0.051870'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5d67f8a5e21-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"valeriefrizzle@test.com","name":"Valerie Frizzle","src":null,"role":"student","last_sign_in_ip":null,"id":89125156,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:41Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-04T22:11:32Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:53 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/88958558
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"304b18a587e81f8f29c98ae34a2837c4"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '310'
+      Ratelimit-Reset:
+      - '8'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=l2EBZMwYwD2.n.Wg3rf2wLfBUefs_B0wSy0A_yWW04k-1770674513-1.0.1.1-yovZuDdjk0Hug01IJulbzZiR0P5c1B4CKFbDnPGEINmpS9uE4yWhCUnw7SmEyyEO8hC0v4adcaiZYzBSIIBh23Ad5g7TPD2VnyZn6WNAtPo;
+        path=/; expires=Mon, 09-Feb-26 22:31:53 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=SpDAJbIdw6rGSuk_6_uQ3gmNyiyufXMwaSDjOtsf6ck-1770674513006-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=d5cce85f-d382-46eb-8d60-d7d6a1d3540c; path=/; expires=Tue, 10 Feb
+        2026 02:01:52 GMT; SameSite=Lax; secure
+      - ahoy_visitor=618c1eed-2d96-46bb-b9dc-2bcab16caa1c; path=/; expires=Wed, 09
+        Feb 2028 22:01:52 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 0b52697eeade632b655aa8305fbbda13
+      X-Kong-Upstream-Latency:
+      - '51'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '310'
+      X-Request-Id:
+      - d904e91c00da0d3ce325de3c7cd48ae7
+      X-Runtime:
+      - '0.047310'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5d90ad0b81e-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"kristin.moser@teachable.com","name":"Ms. Ellie","src":null,"role":"owner","last_sign_in_ip":"216.158.137.35","id":88958558,"courses":[{"course_id":2002435,"course_name":"Growing
+        Delicious Heirloom Tomatoes","enrolled_at":"2024-04-03T23:21:54Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-03T23:21:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-04-03T23:21:37Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2024-04-03T23:22:02Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:53 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/104683905
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"99c403452808da3ad212d907f5ad6590"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '309'
+      Ratelimit-Reset:
+      - '7'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=slxRnGMSx2a1rEKlF_kMGSJDi7jxL7ELQWOOfF2bpxk-1770674513-1.0.1.1-cHsugzUplwaiKKV5I1x3erwvncHRMywiZuc6NG7j.cSw7.2WDLQ6AE3YtFuifYo1QoNs2woHuwyyowiR7ptKPsA72n1NpLIi7i98Q1KdGsQ;
+        path=/; expires=Mon, 09-Feb-26 22:31:53 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=__Akae7iqC37AVVly7iIynJkQ8oV1fpxpJtxZUr_ZZw-1770674513365-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=7ddab9ca-3514-4442-a0bb-1f2552899217; path=/; expires=Tue, 10 Feb
+        2026 02:01:53 GMT; SameSite=Lax; secure
+      - ahoy_visitor=f539c6ba-cfe7-46fa-aa79-9ba6b0410b6d; path=/; expires=Wed, 09
+        Feb 2028 22:01:53 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '3'
+      X-Kong-Request-Id:
+      - 36d54f4a5bbe9905e7cefe4b6a3f4530
+      X-Kong-Upstream-Latency:
+      - '93'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '309'
+      X-Request-Id:
+      - 8078803e0dcb18b9f4b7675be55e2585
+      X-Runtime:
+      - '0.087407'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5db098c1cdb-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"dylan-cruz@live.com","name":"dylan","src":null,"role":"student","last_sign_in_ip":null,"id":104683905,"courses":[{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2024-03-29T16:41:30Z","is_active_enrollment":true,"completed_at":"2024-03-29T16:50:33Z","percent_complete":100},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2024-04-02T17:36:52Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2025-09-08T20:50:38Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:53 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125316
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"0782d23f0113bd638859bc2929ee4a20"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '308'
+      Ratelimit-Reset:
+      - '7'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=fw2_YBlbQzzX7BdxbmjD41NO.9jFXOSXp2Q_RMBZ.HQ-1770674513-1.0.1.1-fGPd7g9ql52N0d_L_R4KZaEKiifvdo_TbDkG2O8gBjMCuX98vGvq0bTyEjv8_jaTEmCxLgFjNnQp026qh.sHajdqgy2kSeuzH1F0lndBeYs;
+        path=/; expires=Mon, 09-Feb-26 22:31:53 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=SNv7hlZi48bJmJ9aVI9zYpLFGI7MXWdKth0r8C4ZtaY-1770674513671-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=42147137-6c22-45f1-b877-732aa9f6b762; path=/; expires=Tue, 10 Feb
+        2026 02:01:53 GMT; SameSite=Lax; secure
+      - ahoy_visitor=23721dd3-c33f-457d-9cde-27a2dd8cc81f; path=/; expires=Wed, 09
+        Feb 2028 22:01:53 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '27'
+      X-Kong-Request-Id:
+      - 6b8dcd44b1c241782adabe0af55bf751
+      X-Kong-Upstream-Latency:
+      - '45'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '308'
+      X-Request-Id:
+      - f4341122d27a9b82a4986e1e739f73b3
+      X-Runtime:
+      - '0.038504'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5dd2882cd4e-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"jyotikaur@test.com","name":"Jyoti Kaur","src":null,"role":"student","last_sign_in_ip":null,"id":89125316,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:42:14Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:43Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-08-03T05:22:07Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:54 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125157
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"2b5588d9e6a4d031af554f7dd7792e46"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '307'
+      Ratelimit-Reset:
+      - '7'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=riSTkENpJookVOS.tvQDoCNhVGjQDdKI3VshGpi8Rcs-1770674513-1.0.1.1-J18j79qMz3Wjtd37k9k8_eqJjhD49Xvcjy7ge5xthcsgdtYQyJFfXx1GZUiioZdPmDSVlwYLzsgvxQht8l3iNV0iXuXq7lWu7Rc2TZ7knAE;
+        path=/; expires=Mon, 09-Feb-26 22:31:53 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=V3w3JtIA0Y3VKkxIHtVHqJ8Bn4T_W_LajcN53j5t_Cc-1770674513992-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=17fe9f35-b79a-4980-9c28-e5f940734ff3; path=/; expires=Tue, 10 Feb
+        2026 02:01:53 GMT; SameSite=Lax; secure
+      - ahoy_visitor=42bd2df6-d02c-4631-a6ca-dc8c6759b82b; path=/; expires=Wed, 09
+        Feb 2028 22:01:53 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '2'
+      X-Kong-Request-Id:
+      - 54d1f118a8f943507603b201f775be4d
+      X-Kong-Upstream-Latency:
+      - '57'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '307'
+      X-Request-Id:
+      - 291a61d6f4f386cc4611ef58966ae6e8
+      X-Runtime:
+      - '0.053487'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5df3d5b721c-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"wandali@test.com","name":"Wanda Li","src":null,"role":"student","last_sign_in_ip":null,"id":89125157,"courses":[{"course_id":2002434,"course_name":"Flower
+        Buddies","enrolled_at":"2023-01-27T16:42:13Z","is_active_enrollment":false,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:41Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:54 GMT
+- request:
+    method: get
+    uri: https://developers.teachable.com/v1/users/89125313
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - 7JbSA3ep6XOMV3t8t7QXuXq9HS79Dwnr
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Feb 2026 22:01:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4e8ed942b900994599500de8355c6120"
+      Ratelimit-Limit:
+      - '360'
+      Ratelimit-Remaining:
+      - '306'
+      Ratelimit-Reset:
+      - '6'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Set-Cookie:
+      - __cf_bm=NpkrsB9yaQAuh9vgm3kDKe6QjOu2h3ihaeJXvVDrwAM-1770674514-1.0.1.1-m0j9rxNkDHbhrgzIicaQPMD9vf3XQw7N_vrBGXUxyySe.QImZuVvcVIdepgahp2JkwffyaydLRYDVRF2DPkTI2TU8olC3cPn13TK7zde3lo;
+        path=/; expires=Mon, 09-Feb-26 22:31:54 GMT; domain=.teachable.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=.uKG1CPdesWHlXqViJjv6dxAqFXYYSsXkD6sjaVmntY-1770674514341-0.0.1.1-604800000;
+        path=/; domain=.teachable.com; HttpOnly; Secure; SameSite=None
+      - ahoy_visit=2b3a3329-df6c-473a-bd0b-4dc254fc3598; path=/; expires=Tue, 10 Feb
+        2026 02:01:54 GMT; SameSite=Lax; secure
+      - ahoy_visitor=3f83f8f7-fd6a-434f-b71f-8ab9435b8b36; path=/; expires=Wed, 09
+        Feb 2028 22:01:54 GMT; SameSite=Lax; secure
+      Strict-Transport-Security:
+      - max-age=0
+      Vary:
+      - Accept
+      Via:
+      - kong/2.8.4.14-enterprise-edition
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Kong-Proxy-Latency:
+      - '1'
+      X-Kong-Request-Id:
+      - 70a7fc6b7ef60509f4cb0a22e755f642
+      X-Kong-Upstream-Latency:
+      - '87'
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit-Minute:
+      - '360'
+      X-Ratelimit-Remaining-Minute:
+      - '306'
+      X-Request-Id:
+      - 06701e30efd30fbc3036830b330fce05
+      X-Runtime:
+      - '0.075091'
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Speculation-Rules:
+      - '"/cdn-cgi/speculation"'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 9cb6a5e12c8e0773-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"email":"keeshafranklin@test.com","name":"Keesha Franklin","src":null,"role":"student","last_sign_in_ip":null,"id":89125313,"courses":[{"course_id":2002436,"course_name":"Herbal
+        Teas \u0026 Other Garden Tinctures","enrolled_at":"2023-01-27T16:44:45Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002430,"course_name":"Trees
+        and Arboreous Concerns","enrolled_at":"2023-01-27T16:35:42Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0},{"course_id":2002431,"course_name":"Mushroom
+        Madness","enrolled_at":"2023-01-27T16:41:35Z","is_active_enrollment":true,"completed_at":null,"percent_complete":0}],"tags":[]}'
+  recorded_at: Mon, 09 Feb 2026 22:01:54 GMT
+recorded_with: VCR 6.4.0
