@@ -29,7 +29,9 @@ TEACHABLE_API_KEY=your_api_key_here
 
 **Note:** Do not commit `.env` (add to `.gitignore`).
 
-### Execution
+No database setup is required, as the application does not persist data and acts only as an API consumer.
+
+### CLI Execution
 This project includes a rake task to generate the Published Courses Report from the command line.
 
 ```bash
@@ -52,6 +54,30 @@ When executed, the rake task:
 - Fetches published courses
 - Retrieves active students for each course
 - Outputs the formatted report to the console
+
+### Running the Web Interface
+This project includes a very simple web interface built with Rails to display the published courses report.
+
+*Starting the Server*
+
+From the project root, run:
+
+```bash
+rails server
+```
+*Accessing the Report*
+
+Open your browser and navigate to: `http://localhost:3000`
+
+The home page will:
+
+- Display a loading message while data is being fetched from the Teachable Public API.
+
+- Retrieve all published courses.
+
+- Fetch active enrollments and related student information.
+
+- ender the report dynamically once the data is available.
 
 ## How to Run Tests
 

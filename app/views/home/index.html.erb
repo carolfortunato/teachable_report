@@ -1,0 +1,121 @@
+<!-- app/views/home/index.html.erb -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Published Courses Report</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 40px;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      #loading {
+        text-align: center;
+        font-size: 18px;
+        color: #666;
+      }
+
+      .course-card {
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .course-card h2 {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+
+      .course-card p {
+        margin-top: 0;
+        color: #555;
+      }
+
+      .students {
+        margin-top: 16px;
+      }
+
+      .students ul {
+        padding-left: 20px;
+      }
+
+      .students li {
+        margin-bottom: 4px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .error {
+        color: #c0392b;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>📚 Published Courses Report</h1>
+
+    <div class="container">
+      <div id="loading">⏳ Loading courses and enrollments...</div>
+      <div id="content" style="display: none;"></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/published_courses")
+          .then(response => response.json())
+          .then(data => {
+            const container = document.getElementById("content");
+            const loading = document.getElementById("loading");
+
+            loading.style.display = "none";
+            container.style.display = "block";
+
+            data.forEach(course => {
+              const courseDiv = document.createElement("div");
+              courseDiv.className = "course-card";
+
+              courseDiv.innerHTML = `
+                <h2>${course.name}</h2>
+                <p>${course.heading}</p>
+
+                <div class="students">
+                  <strong>Active Students</strong>
+                  <ul>
+                    ${
+                      course.students.length > 0
+                        ? course.students.map(student =>
+                            `<li>${student.name} <em>(${student.email})</em></li>`
+                          ).join("")
+                        : "<li>No active students</li>"
+                    }
+                  </ul>
+                </div>
+              `;
+
+              container.appendChild(courseDiv);
+            });
+          })
+          .catch(() => {
+            const loading = document.getElementById("loading");
+            loading.className = "error";
+            loading.innerText = "❌ Error loading report.";
+          });
+      });
+    </script>
+  </body>
+</html>
