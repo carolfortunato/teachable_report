@@ -1,8 +1,4 @@
-require 'spec_helper'
-require_relative '../../app/services/reports/published_courses_report'
-require_relative '../../app/services/teachable/client'
-require 'dotenv'
-Dotenv.load('.env.test')
+require 'rails_helper'
 
 RSpec.describe Reports::PublishedCoursesReport do
   it "generates report with published courses and active students" do

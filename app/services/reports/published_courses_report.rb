@@ -26,17 +26,16 @@ module Reports
     def active_students_for(course_id)
       enrollments = client.enrollments(course_id:)['enrollments']
 
-      enrollments
-        .map { |e| student_data(e['user_id']) }
+      enrollments.map { |e| student_data(e['user_id']) }
     end
 
     def student_data(user_id)
-    user = client.user(user_id)
+      user = client.user(user_id)
 
-    {
-      name: user['name'],
-      email: user['email']
-    }
+      {
+        name: user['name'],
+        email: user['email']
+      }
     end
   end
 end
